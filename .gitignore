@@ -7,5 +7,5 @@
 # Operating System
 .DS_Store
 
-# Dependency Directories
+# External Dependencies
 node_modules/
