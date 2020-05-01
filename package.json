@@ -1,0 +1,11 @@
+{
+  "name": "xpath-html",
+  "version": "1.0.0",
+  "description": "Easily use XPath to find the location of any element on a webpage using HTML DOM structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
