@@ -15,6 +15,10 @@
 
 ## Installation
 
+```shell script
+npm install xpath-html
+```
+
 ## Usages
 
 ## License

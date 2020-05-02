@@ -27,7 +27,7 @@ test:
 	npx jest
 
 .PHONY: git-add
-git-add: fmt lint
+git-add: fmt lint test
 	@printf "\n"
 	git add --all .
 	@printf "\n"
