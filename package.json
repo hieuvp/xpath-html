@@ -12,6 +12,6 @@
     "xpath": "0.0.27"
   },
   "devDependencies": {
-    "jest": "25.5.3"
+    "jest": "25.5.4"
   }
 }
