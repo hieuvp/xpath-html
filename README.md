@@ -9,6 +9,8 @@
 
 - [Installation](#installation)
 - [Usages](#usages)
+  - [`queryFromPageSource`](#queryfrompagesource)
+  - [`queryFromNode`](#queryfromnode)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
