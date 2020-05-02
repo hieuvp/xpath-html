@@ -21,6 +21,10 @@ npm install xpath-html
 
 ## Usages
 
+### `queryFromPageSource`
+
+### `queryFromNode`
+
 ## License
 
 MIT
