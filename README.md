@@ -12,11 +12,8 @@
 
 - [Installation](#installation)
 - [Usages](#usages)
-<<<<<<< HEAD
   - [`queryFromPageSource(expression, pageSource, single)`](#queryfrompagesourceexpression-pagesource-single)
-  - [`queryFromNode`](#queryfromnode)
-=======
->>>>>>> master
+  - [`queryFromNode(expression, node, single)`](#queryfromnodeexpression-node-single)
 - [Dependencies](#dependencies)
 - [License](#license)
 
@@ -32,7 +29,6 @@ npm install --save xpath-html
 
 ## Usages
 
-<<<<<<< HEAD
 ### `queryFromPageSource(expression, pageSource, single)`
 
 > Making XPath query against an HTML document.
@@ -57,7 +53,7 @@ Example:
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-### `queryFromNode`
+### `queryFromNode(expression, node, single)`
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromPageSource.js) -->
 <!-- The below code snippet is automatically added from examples/queryFromPageSource.js -->
@@ -69,18 +65,10 @@ Example:
 
 ## Dependencies
 
-- [xpath](https://github.com/goto100/xpath)
-- [xmldom](https://github.com/jindw/xmldom)
-- [xmlserializer](https://github.com/cburgmer/xmlserializer)
-- [parse5](https://github.com/inikulin/parse5)
-=======
-## Dependencies
-
 1. [xpath](https://github.com/goto100/xpath)
 1. [xmldom](https://github.com/jindw/xmldom)
 1. [xmlserializer](https://github.com/cburgmer/xmlserializer)
 1. [parse5](https://github.com/inikulin/parse5)
->>>>>>> master
 
 ## License
 
