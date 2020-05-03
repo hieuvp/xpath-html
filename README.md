@@ -21,7 +21,7 @@
 
 ## Installation
 
-[**`xpath-html`**](https://www.npmjs.com/package/xpath-html) is available as a package on [NPM](https://www.npmjs.com/):
+[`xpath-html`](https://www.npmjs.com/package/xpath-html) is available as a package on [NPM](https://www.npmjs.com/):
 
 ```shell script
 npm install --save xpath-html
