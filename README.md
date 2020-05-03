@@ -69,6 +69,8 @@ console.log(`The matching text is "${node.getText()}"`);
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+**Result**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/hello.txt) -->
 <!-- The below code snippet is automatically added from output/hello.txt -->
 
@@ -78,6 +80,8 @@ The matching text is "Made with love by"
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
 
 ### `fromPageSource(html).findElement(expression)`
 
@@ -118,6 +122,8 @@ console.log(node.toString());
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+**Result**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/fromPageSource.findElement.txt) -->
 <!-- The below code snippet is automatically added from output/fromPageSource.findElement.txt -->
 
@@ -126,6 +132,8 @@ console.log(node.toString());
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
 
 ### `fromPageSource(html).findElements(expression)`
 
@@ -161,6 +169,8 @@ console.log(nodes[1].toString());
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+**Result**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/fromPageSource.findElements.txt) -->
 <!-- The below code snippet is automatically added from output/fromPageSource.findElements.txt -->
 
@@ -171,6 +181,8 @@ nodes.length = 158
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
 
 ### `fromNode(xml).findElement(expression)`
 
@@ -204,6 +216,8 @@ console.log(node.toString());
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+**Result**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/fromNode.findElement.txt) -->
 <!-- The below code snippet is automatically added from output/fromNode.findElement.txt -->
 
@@ -212,6 +226,8 @@ console.log(node.toString());
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
 
 ### `fromNode(xml).findElements(expression)`
 
@@ -247,6 +263,8 @@ console.log(nodes[1].toString());
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+**Result**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/fromNode.findElements.txt) -->
 <!-- The below code snippet is automatically added from output/fromNode.findElements.txt -->
 
@@ -257,6 +275,8 @@ length = 102
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
 
 ### `node.getTagName()`
 
@@ -294,6 +314,8 @@ console.log(nodes[1].getTagName());
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+**Result**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/node.getTagName.txt) -->
 <!-- The below code snippet is automatically added from output/node.getTagName.txt -->
 
@@ -304,6 +326,8 @@ img
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
 
 ### `node.getText()`
 
@@ -341,6 +365,8 @@ console.log(nodes[1].getText());
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+**Result**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/node.getText.txt) -->
 <!-- The below code snippet is automatically added from output/node.getText.txt -->
 
@@ -351,6 +377,8 @@ undefined
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
 
 ## Dependencies
 
