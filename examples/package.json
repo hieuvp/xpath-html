@@ -1,6 +1,5 @@
 {
-  "name": "xpath-html-examples",
-  "version": "1.0.0",
+  "name": "examples",
   "dependencies": {
     "xpath-html": "file:.."
   }
