@@ -70,6 +70,24 @@ npm install --save xpath-html
 <!-- The below code snippet is automatically added from examples/queryFromPage.js -->
 
 ```js
+const xpath = require("xpath-html");
+const fs = require("fs");
+
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const nodes = xpath.queryFromPage("//*[text()='Made with love by']", html);
+
+console.log(nodes.toString());
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/queryFromPage.console) -->
+<!-- The below code snippet is automatically added from examples/output/queryFromPage.console -->
+
+```console
+$ examples/queryFromPage.js
+
+<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
