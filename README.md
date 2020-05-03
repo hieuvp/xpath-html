@@ -36,6 +36,51 @@ npm install --save xpath-html
 
 > Making XPath query against an HTML document.
 
+```ts
+type SelectedValue = Node | Attr | string | number | boolean;
+interface XPathSelect {
+  (expression: string, node?: Node): Array<SelectedValue>;
+  (expression: string, node: Node, single: true): SelectedValue;
+}
+```
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromPage.js) -->
+<!-- The below code snippet is automatically added from examples/queryFromPage.js -->
+
+```js
+const xpath = require("xpath-html");
+const fs = require("fs");
+
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const nodes = xpath.queryFromPage("//*[text()='Made with love by']", html);
+
+console.log(nodes.toString());
+
+// console.log(nodes[0].localName + ": " + nodes[0].firstChild.data)
+// console.log("Node: " + nodes[0].toString())
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/queryFromPage.console) -->
+<!-- The below code snippet is automatically added from examples/output/queryFromPage.console -->
+
+```console
+<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+### `queryFromNode(expression, node, single)`
+
+> Making XPath query against an XML node.
+
+**Parameters:**
+
+**Returns:**
+
+**Example**:
+
 **Parameters:**
 
 | Param                      | Type                                       | Description                                                                                                                            |
@@ -52,42 +97,6 @@ npm install --save xpath-html
 <!-- The below code snippet is automatically added from examples/queryFromNode.js -->
 
 ```js
-```
-
-<!-- AUTO-GENERATED-CONTENT:END -->
-
-### `queryFromNode(expression, node, single)`
-
-> Making XPath query against an XML node.
-
-**Parameters:**
-
-**Returns:**
-
-**Example**:
-
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromPage.js) -->
-<!-- The below code snippet is automatically added from examples/queryFromPage.js -->
-
-```js
-const xpath = require("xpath-html");
-const fs = require("fs");
-
-const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
-const nodes = xpath.queryFromPage("//*[text()='Made with love by']", html);
-
-console.log(nodes.toString());
-```
-
-<!-- AUTO-GENERATED-CONTENT:END -->
-
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/queryFromPage.console) -->
-<!-- The below code snippet is automatically added from examples/output/queryFromPage.console -->
-
-```console
-$ examples/queryFromPage.js
-
-<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
