@@ -2,7 +2,6 @@ const xpath = require('xpath');
 const { DOMParser } = require('xmldom');
 
 const composeExpressionWithNamespace = require('./composeExpressionWithNamespace');
-
 const enhanceElement = require('./enhanceElement');
 
 const DEFAULT_NAMESPACE = 'x';
@@ -14,7 +13,6 @@ const DEFAULT_NAMESPACE = 'x';
  */
 class XPath {
   /**
-   *
    * @param {string} xml
    */
   constructor(xml) {
@@ -26,7 +24,6 @@ class XPath {
   }
 
   /**
-   *
    * @param {string} expression
    * @returns {*}
    */

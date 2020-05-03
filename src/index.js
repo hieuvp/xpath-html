@@ -4,14 +4,12 @@ const parser = require('parse5');
 const XPath = require('./XPath');
 
 /**
- *
  * @param {string} xml
  * @returns {XPath}
  */
 const fromNode = (xml) => new XPath(xml.toString());
 
 /**
- *
  * @param {string} html
  * @returns {XPath}
  */
