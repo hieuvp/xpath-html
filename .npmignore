@@ -1,6 +1,6 @@
-### Turn On Whitelisting
+### Turn on whitelisting
 **/*
 
-### Source Code
+### Source code
 !src/*
 src/*.test.js
