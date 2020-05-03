@@ -1,10 +1,25 @@
 {
   "name": "xpath-html",
+<<<<<<< HEAD
   "version": "0.0.2",
+=======
+  "version": "0.0.3",
+>>>>>>> master
   "description": "Easily use XPath to locate any element in an HTML DOM page",
   "main": "src/index.js",
   "author": "Harrison (Hieu) Van",
   "license": "MIT",
+<<<<<<< HEAD
+=======
+  "repository": "https://github.com/hieuvp/xpath-html.git",
+  "homepage": "https://github.com/hieuvp/xpath-html#readme",
+  "keywords": [
+    "xpath-html",
+    "xpath",
+    "html",
+    "dom"
+  ],
+>>>>>>> master
   "dependencies": {
     "parse5": "6.0.0",
     "xmldom": "0.3.0",
