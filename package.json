@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Easily use XPath to locate any element in an HTML DOM page",
   "main": "src/index.js",
-  "author": "Hieu Van",
+  "author": "Harrison (Hieu) Van",
   "license": "MIT",
   "dependencies": {
     "parse5": "6.0.0",
