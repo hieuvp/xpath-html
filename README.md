@@ -28,7 +28,19 @@ npm install --save xpath-html
 
 ## Usages
 
-### `queryFromPageSource`
+### `queryFromPageSource(expression, pageSource, single)`
+
+**Parameters:**
+
+| Param                      | Type                                                                                                           | Description                                                                                                                            |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `Optional` fragmentContext | Element                                                                                                        | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| html                       | `string`                                                                                                       | Input HTML fragment string.                                                                                                            |
+| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+
+**Returns:** DocumentFragment
+
+Example:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromNode.js) -->
 <!-- AUTO-GENERATED-CONTENT:END -->
