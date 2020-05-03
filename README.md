@@ -1,7 +1,7 @@
 # XPath HTML
 
 [![CI](https://github.com/hieuvp/xpath-html/workflows/CI/badge.svg)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3ACI)
-[![Package](https://github.com/hieuvp/xpath-html/workflows/Package/badge.svg)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3APackage)
+[![Release](https://github.com/hieuvp/xpath-html/workflows/Release/badge.svg)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3ARelease)
 [![Version](https://img.shields.io/npm/v/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
 [![NPM](https://img.shields.io/npm/dm/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
 
