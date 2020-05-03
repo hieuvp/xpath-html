@@ -25,11 +25,11 @@ const queryFromNode = (expression, node, single = false) => {
 
 /**
  * @param {string} expression
- * @param {string} pageSource
+ * @param {string} source
  * @param {boolean} single
  * @returns {object}
  */
-const queryFromPageSource = (expression, pageSource, single = false) => {
+const queryFromPage = (expression, source, single = false) => {
   const dom = parser.parse(pageSource);
   const xhtml = xmlserializer.serializeToString(dom);
 
@@ -38,5 +38,5 @@ const queryFromPageSource = (expression, pageSource, single = false) => {
 
 module.exports = {
   queryFromNode,
-  queryFromPageSource,
+  queryFromPage,
 };

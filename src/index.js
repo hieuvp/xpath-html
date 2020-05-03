@@ -1,6 +1,6 @@
-const { queryFromPageSource, queryFromNode } = require('./query');
+const { queryFromNode, queryFromPage } = require('./query');
 
 module.exports = {
-  queryFromPageSource,
   queryFromNode,
+  queryFromPage,
 };
