@@ -27,6 +27,10 @@ lint:
 test:
 	npx jest
 
+.PHONY: test-ci
+test-ci:
+	npx jest --ci --bail
+
 .PHONY: git-add
 git-add: fmt lint test
 	@printf "\n"
