@@ -38,7 +38,8 @@ I made a concisely tutorial for you to read.
 
 ## Installation
 
-[`xpath-html`](https://www.npmjs.com/package/xpath-html) is available as a package on [NPM](https://www.npmjs.com/):
+[`xpath-html`](https://www.npmjs.com/package/xpath-html) is available as a package on [NPM](https://www.npmjs.com/),
+open up a **Terminal** and run the following command:
 
 ```shell script
 npm install --save xpath-html
