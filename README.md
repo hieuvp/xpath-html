@@ -1,7 +1,7 @@
 # XPath HTML
 
-[![CI](https://github.com/hieuvp/xpath-html/workflows/CI/badge.svg)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3ACI)
-[![Release](https://github.com/hieuvp/xpath-html/workflows/Release/badge.svg)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3ARelease)
+[![CI](https://github.com/hieuvp/xpath-html/workflows/ci/badge.svg)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3aci)
+[![Release](https://github.com/hieuvp/xpath-html/workflows/release/badge.svg)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3arelease)
 [![Version](https://img.shields.io/npm/v/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
 [![NPM](https://img.shields.io/npm/dm/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
 
@@ -382,8 +382,6 @@ undefined
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
-
-<br />
 
 ## Dependencies
 
