@@ -312,6 +312,9 @@ undefined
 
 ## Dependencies
 
+Special thanks to all contributors of these libraries
+which are the foundation of which **`xpath-html`** was built upon.
+
 1. [xpath](https://github.com/goto100/xpath)
 1. [xmldom](https://github.com/jindw/xmldom)
 1. [xmlserializer](https://github.com/cburgmer/xmlserializer)
@@ -320,3 +323,5 @@ undefined
 ## License
 
 MIT
+
+Made with ❤ in [ShopBack](https://www.shopback.com/)
