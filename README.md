@@ -53,6 +53,8 @@ Extensive APIs
 
 ### Hello `XPath HTML`
 
+**Example**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/hello.js) -->
 <!-- The below code snippet is automatically added from examples/hello.js -->
 
@@ -80,6 +82,9 @@ The matching text is "Made with love by"
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+This is a great example that help you to get started,
+if you want to dive more into details please looking at the APIs below.
 
 <br />
 
