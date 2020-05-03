@@ -5,18 +5,18 @@ const XPath = require('./XPath');
 
 /**
  *
- * @param {object} node
+ * @param {string} xml
  * @returns {XPath}
  */
-const fromNode = (node) => new XPath(node.toString());
+const fromNode = (xml) => new XPath(xml.toString());
 
 /**
  *
- * @param {string} pageSource
+ * @param {string} html
  * @returns {XPath}
  */
-const fromPageSource = (pageSource) => {
-  const dom = parser.parse(pageSource);
+const fromPageSource = (html) => {
+  const dom = parser.parse(html);
   const xhtml = serializeToString(dom);
 
   return fromNode(xhtml);

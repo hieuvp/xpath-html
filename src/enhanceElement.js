@@ -12,8 +12,10 @@ const getTagName = (node) => get(node, ['tagName']);
  */
 const getText = (node) => {
   const nodeName = get(node, ['firstChild', 'nodeName']);
-  if (nodeName === '#text') {
-    return get(node, ['firstChild', 'nodeValue']);
+  const nodeValue = get(node, ['firstChild', 'nodeValue']);
+
+  if (nodeName === '#text' && typeof nodeValue === 'string') {
+    return nodeValue;
   }
 
   return undefined;

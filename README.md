@@ -12,12 +12,14 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [Installation](#installation)
 - [Usages](#usages)
-  - [`queryFromPage(expression, pageSource, single)`](#queryfrompageexpression-pagesource-single)
-  - [`queryFromNode(expression, node, single)`](#queryfromnodeexpression-node-single)
-  - [`getText`](#gettext)
+  - [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
+  - [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression)
+  - [`fromNode(xml).findElement(expression)`](#fromnodexmlfindelementexpression)
+  - [`fromNode(xml).findElements(expression)`](#fromnodexmlfindelementsexpression)
+  - [`getTagName()`](#gettagname)
+  - [`getText()`](#gettext)
 - [Dependencies](#dependencies)
 - [License](#license)
 
@@ -33,7 +35,7 @@ npm install --save xpath-html
 
 ## Usages
 
-### `queryFromPage(expression, pageSource, single)`
+### `fromPageSource(html).findElement(expression)`
 
 > Making XPath query against an HTML document.
 
@@ -44,37 +46,6 @@ interface XPathSelect {
   (expression: string, node: Node, single: true): SelectedValue;
 }
 ```
-
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromPage.js) -->
-<!-- The below code snippet is automatically added from examples/queryFromPage.js -->
-
-```js
-const xpath = require("xpath-html");
-const fs = require("fs");
-
-const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
-const nodes = xpath.queryFromPage("//*[text()='Made with love by']", html);
-
-console.log(nodes.toString());
-
-console.log(`${nodes[0].localName}: ${nodes[0].firstChild.data}`);
-console.log(`Node: ${nodes[0].toString()}`);
-```
-
-<!-- AUTO-GENERATED-CONTENT:END -->
-
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/queryFromPage.console) -->
-<!-- The below code snippet is automatically added from examples/output/queryFromPage.console -->
-
-```console
-<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
-div: Made with love by
-Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
-```
-
-<!-- AUTO-GENERATED-CONTENT:END -->
-
-### `queryFromNode(expression, node, single)`
 
 > Making XPath query against an XML node.
 
@@ -96,15 +67,27 @@ Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 
 **Example**:
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromNode.js) -->
-<!-- The below code snippet is automatically added from examples/queryFromNode.js -->
+fromPageSource.findElement.js
 
-```js
-```
+### `fromPageSource(html).findElements(expression)`
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+fromPageSource.findElements.js
 
-### `getText`
+### `fromNode(xml).findElement(expression)`
+
+fromNode.findElement.js
+
+### `fromNode(xml).findElements(expression)`
+
+fromNode.findElements.js
+
+### `getTagName()`
+
+getTagName.js
+
+### `getText()`
+
+getText.js
 
 ## Dependencies
 
