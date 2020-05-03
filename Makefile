@@ -40,11 +40,18 @@ test-ci:
 	npx jest --ci --bail
 
 .PHONY: git-add
-git-add: fmt lint test
+git-add: fmt lint
 	@printf "\n"
 	git add --all .
 	@printf "\n"
 
+.PHONY: git-pre-merge
+git-pre-merge: test run-examples git-add
+
 .PHONY: clean-install
 clean-install:
 	scripts/clean-install.sh
+
+.PHONY: run-examples
+run-examples:
+	scripts/run-examples.sh
