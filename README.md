@@ -16,6 +16,7 @@
 - [Usages](#usages)
   - [`queryFromPage(expression, pageSource, single)`](#queryfrompageexpression-pagesource-single)
   - [`queryFromNode(expression, node, single)`](#queryfromnodeexpression-node-single)
+  - [`getText`](#gettext)
 - [Dependencies](#dependencies)
 - [License](#license)
 
@@ -72,6 +73,8 @@ npm install --save xpath-html
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+### `getText`
 
 ## Dependencies
 
