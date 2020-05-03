@@ -1,11 +1,13 @@
 const fs = require('fs');
 const xpath = require('xpath-html');
 
-// Assuming you are having an html file locally,
-// Don't worry much about this, you can make an HTTP request and get a response as html and
-// Send into as an input,
-// As long as, the argument is a string, everything should be fine.
+// Assuming you've got an html file locally,
+// here is a file which I scraped from www.shopback.sg
 const html = fs.readFileSync(`${__dirname}/shopback.html`, 'utf8');
+
+// Don't worry much about the input,
+// you could be able to use an HTML response from an HTTP request
+// As long as the argument is a string type, everything should be fine.
 const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
 
 console.log(`The matching tag is "${node.getTagName()}"`);
