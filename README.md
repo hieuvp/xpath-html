@@ -12,6 +12,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [Installation](#installation)
 - [Usages](#usages)
   - [`queryFromPage(expression, pageSource, single)`](#queryfrompageexpression-pagesource-single)
@@ -56,8 +57,8 @@ const nodes = xpath.queryFromPage("//*[text()='Made with love by']", html);
 
 console.log(nodes.toString());
 
-// console.log(nodes[0].localName + ": " + nodes[0].firstChild.data)
-// console.log("Node: " + nodes[0].toString())
+console.log(`${nodes[0].localName}: ${nodes[0].firstChild.data}`);
+console.log(`Node: ${nodes[0].toString()}`);
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -67,6 +68,8 @@ console.log(nodes.toString());
 
 ```console
 <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
+div: Made with love by
+Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
