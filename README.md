@@ -12,7 +12,7 @@
 
 - [Installation](#installation)
 - [Usages](#usages)
-  - [`queryFromPageSource(expression, pageSource, single)`](#queryfrompagesourceexpression-pagesource-single)
+  - [`queryFromPage(expression, pageSource, single)`](#queryfrompageexpression-pagesource-single)
   - [`queryFromNode(expression, node, single)`](#queryfromnodeexpression-node-single)
 - [Dependencies](#dependencies)
 - [License](#license)
@@ -29,7 +29,7 @@ npm install --save xpath-html
 
 ## Usages
 
-### `queryFromPageSource(expression, pageSource, single)`
+### `queryFromPage(expression, pageSource, single)`
 
 > Making XPath query against an HTML document.
 
@@ -43,7 +43,7 @@ npm install --save xpath-html
 
 **Returns:** DocumentFragment
 
-Example:
+**Example**:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromNode.js) -->
 <!-- The below code snippet is automatically added from examples/queryFromNode.js -->
@@ -54,6 +54,14 @@ Example:
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `queryFromNode(expression, node, single)`
+
+> Making XPath query against an XML node.
+
+**Parameters:**
+
+**Returns:**
+
+**Example**:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromPageSource.js) -->
 <!-- The below code snippet is automatically added from examples/queryFromPageSource.js -->
