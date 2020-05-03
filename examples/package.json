@@ -1,0 +1,6 @@
+{
+  "name": "examples",
+  "dependencies": {
+    "xpath-html": "file:.."
+  }
+}
