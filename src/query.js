@@ -1,6 +1,5 @@
 const xpath = require('xpath');
 const { DOMParser } = require('xmldom');
-
 const xmlserializer = require('xmlserializer');
 const parser = require('parse5');
 
@@ -30,7 +29,7 @@ const queryFromNode = (expression, node, single = false) => {
  * @returns {object}
  */
 const queryFromPage = (expression, source, single = false) => {
-  const dom = parser.parse(pageSource);
+  const dom = parser.parse(source);
   const xhtml = xmlserializer.serializeToString(dom);
 
   return queryFromNode(expression, xhtml, single);

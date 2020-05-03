@@ -65,8 +65,8 @@ npm install --save xpath-html
 
 **Example**:
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromPageSource.js) -->
-<!-- The below code snippet is automatically added from examples/queryFromPageSource.js -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromPage.js) -->
+<!-- The below code snippet is automatically added from examples/queryFromPage.js -->
 
 ```js
 ```
