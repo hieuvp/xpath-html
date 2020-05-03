@@ -67,27 +67,143 @@ interface XPathSelect {
 
 **Example**:
 
-fromPageSource.findElement.js
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/fromPageSource.findElement.js) -->
+<!-- The below code snippet is automatically added from examples/fromPageSource.findElement.js -->
+
+```js
+const xpath = require("xpath-html");
+const fs = require("fs");
+
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
+
+console.log(node.toString());
+
+console.log(`${node.tagName}: ${node.firstChild.data}`);
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/fromPageSource.findElement.console) -->
+<!-- The below code snippet is automatically added from examples/output/fromPageSource.findElement.console -->
+
+```console
+<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
+div: Made with love by
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `fromPageSource(html).findElements(expression)`
 
-fromPageSource.findElements.js
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/fromPageSource.findElements.js) -->
+<!-- The below code snippet is automatically added from examples/fromPageSource.findElements.js -->
+
+```js
+const xpath = require("xpath-html");
+const fs = require("fs");
+
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const nodes = xpath.fromPageSource(html).findElements("//*[text()='Made with love by']");
+
+console.log(nodes.toString());
+
+console.log(`${nodes[0].localName}: ${nodes[0].firstChild.data}`);
+console.log(`Node: ${nodes[0].toString()}`);
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/fromPageSource.findElements.console) -->
+<!-- The below code snippet is automatically added from examples/output/fromPageSource.findElements.console -->
+
+```console
+<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
+div: Made with love by
+Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `fromNode(xml).findElement(expression)`
 
-fromNode.findElement.js
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/fromNode.findElement.js) -->
+<!-- The below code snippet is automatically added from examples/fromNode.findElement.js -->
+
+```js
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/fromNode.findElement.console) -->
+<!-- The below code snippet is automatically added from examples/output/fromNode.findElement.console -->
+
+```console
+
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `fromNode(xml).findElements(expression)`
 
-fromNode.findElements.js
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/fromNode.findElements.js) -->
+<!-- The below code snippet is automatically added from examples/fromNode.findElements.js -->
+
+```js
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/fromNode.findElements.console) -->
+<!-- The below code snippet is automatically added from examples/output/fromNode.findElements.console -->
+
+```console
+
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `getTagName()`
 
-getTagName.js
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/getTagName.js) -->
+<!-- The below code snippet is automatically added from examples/getTagName.js -->
+
+```js
+// One element
+// Multiple elements
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/getTagName.console) -->
+<!-- The below code snippet is automatically added from examples/output/getTagName.console -->
+
+```console
+
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `getText()`
 
-getText.js
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/getText.js) -->
+<!-- The below code snippet is automatically added from examples/getText.js -->
+
+```js
+// One element
+// Multiple elements
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/getText.console) -->
+<!-- The below code snippet is automatically added from examples/output/getText.console -->
+
+```console
+
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Dependencies
 
