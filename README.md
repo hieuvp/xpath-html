@@ -20,8 +20,8 @@
   - [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression)
   - [`fromNode(xml).findElement(expression)`](#fromnodexmlfindelementexpression)
   - [`fromNode(xml).findElements(expression)`](#fromnodexmlfindelementsexpression)
-  - [`getTagName()`](#gettagname)
-  - [`getText()`](#gettext)
+  - [`node.getTagName()`](#nodegettagname)
+  - [`node.getText()`](#nodegettext)
 - [Dependencies](#dependencies)
 - [License](#license)
 
@@ -65,8 +65,8 @@ interface XPathSelect {
 <!-- The below code snippet is automatically added from examples/fromPageSource.findElement.js -->
 
 ```js
-const xpath = require("xpath-html");
 const fs = require("fs");
+const xpath = require("xpath-html");
 
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
@@ -103,8 +103,8 @@ console.log(node.toString());
 <!-- The below code snippet is automatically added from examples/fromPageSource.findElements.js -->
 
 ```js
-const xpath = require("xpath-html");
 const fs = require("fs");
+const xpath = require("xpath-html");
 
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const nodes = xpath
@@ -150,8 +150,8 @@ nodes.length = 158
 <!-- The below code snippet is automatically added from examples/fromNode.findElement.js -->
 
 ```js
-const xpath = require("xpath-html");
 const fs = require("fs");
+const xpath = require("xpath-html");
 
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-group']");
@@ -189,8 +189,8 @@ console.log(node.toString());
 <!-- The below code snippet is automatically added from examples/fromNode.findElements.js -->
 
 ```js
-const xpath = require("xpath-html");
 const fs = require("fs");
+const xpath = require("xpath-html");
 
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-group']");
@@ -252,8 +252,8 @@ console.log(nodes[1].getTagName());
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/getTagName.txt) -->
-<!-- The below code snippet is automatically added from output/getTagName.txt -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/node.getTagName.txt) -->
+<!-- The below code snippet is automatically added from output/node.getTagName.txt -->
 
 ```txt
 div
@@ -299,8 +299,8 @@ console.log(nodes[1].getText());
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/getText.txt) -->
-<!-- The below code snippet is automatically added from output/getText.txt -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/node.getText.txt) -->
+<!-- The below code snippet is automatically added from output/node.getText.txt -->
 
 ```txt
 Made with love by

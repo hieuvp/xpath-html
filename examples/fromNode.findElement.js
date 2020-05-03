@@ -1,5 +1,5 @@
-const xpath = require('xpath-html');
 const fs = require('fs');
+const xpath = require('xpath-html');
 
 const html = fs.readFileSync(`${__dirname}/shopback.html`, 'utf8');
 const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-group']");
