@@ -24,7 +24,7 @@ I made a concisely tutorial for you to read.
 
 - [Installation](#installation)
 - [Usages](#usages)
-  - [Hello `XPath HTML`](#hello-xpath-html)
+  - [Hello XPath for HTML](#hello-xpath-for-html)
   - [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
   - [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression)
   - [`fromNode(xml).findElement(expression)`](#fromnodexmlfindelementexpression)
@@ -52,7 +52,7 @@ that results from...
 Sub section from previous results.
 Extensive APIs
 
-### Hello `XPath HTML`
+### Hello XPath for HTML
 
 **Example**:
 
@@ -66,8 +66,8 @@ const xpath = require("xpath-html");
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
 
-console.log(`Your tag name is "${node.getTagName()}"`);
-console.log(`The matching text is "${node.getText()}"`);
+console.log(`The matching tag is "${node.getTagName()}"`);
+console.log(`Your full text is "${node.getText()}"`);
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -78,8 +78,8 @@ console.log(`The matching text is "${node.getText()}"`);
 <!-- The below code snippet is automatically added from output/hello.txt -->
 
 ```txt
-Your tag name is "div"
-The matching text is "Made with love by"
+The matching tag is "div"
+Your full text is "Made with love by"
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
