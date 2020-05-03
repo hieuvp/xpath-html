@@ -1,3 +1,5 @@
+const REGEX = /^([./]*)/g;
+
 /**
  * Compose the given XPath expression with a namespace
  *
@@ -5,7 +7,4 @@
  * @param {string} namespace - The XML namespace
  * @returns {string}
  */
-module.exports = (expression, namespace) => {
-  const regex = /^([./\\]*)/g;
-  return expression.replace(regex, `$1${namespace}:`);
-};
+module.exports = (expression, namespace) => expression.replace(REGEX, `$1${namespace}:`);
