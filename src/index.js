@@ -1,5 +1,5 @@
-const { serializeToString } = require('xmlserializer');
 const parser = require('parse5');
+const { serializeToString } = require('xmlserializer');
 
 const XPath = require('./XPath');
 

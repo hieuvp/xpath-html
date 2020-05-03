@@ -1,5 +1,5 @@
-const xpath = require('xpath');
 const { DOMParser } = require('xmldom');
+const xpath = require('xpath');
 
 const composeExpressionWithNamespace = require('./composeExpressionWithNamespace');
 const enhanceElement = require('./enhanceElement');

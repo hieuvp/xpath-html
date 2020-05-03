@@ -216,7 +216,7 @@ length = 102
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-### `getTagName()`
+### `node.getTagName()`
 
 **Parameters:**
 
@@ -230,8 +230,8 @@ length = 102
 
 **Example**:
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/getTagName.js) -->
-<!-- The below code snippet is automatically added from examples/getTagName.js -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/node.getTagName.js) -->
+<!-- The below code snippet is automatically added from examples/node.getTagName.js -->
 
 ```js
 const xpath = require("xpath-html");
@@ -263,7 +263,7 @@ img
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-### `getText()`
+### `node.getText()`
 
 **Parameters:**
 
@@ -277,8 +277,8 @@ img
 
 **Example**:
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/getText.js) -->
-<!-- The below code snippet is automatically added from examples/getText.js -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/node.getText.js) -->
+<!-- The below code snippet is automatically added from examples/node.getText.js -->
 
 ```js
 const xpath = require("xpath-html");

@@ -22,7 +22,7 @@ const getText = (node) => {
 };
 
 /**
- * Add more functionalities to the existing API
+ * Add more functionalities into the existing APIs
  *
  * @param {object} node
  * @returns {object}
