@@ -6,6 +6,7 @@ fmt:
 
 	@printf "\n"
 	prettier --write package.json
+	prettier --write examples/package.json
 	@printf "\n"
 
 	@printf "\n"
