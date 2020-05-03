@@ -49,14 +49,6 @@ interface XPathSelect {
 }
 ```
 
-> Making XPath query against an XML node.
-
-**Parameters:**
-
-**Returns:**
-
-**Example**:
-
 **Parameters:**
 
 | Param                      | Type                                       | Description                                                                                                                            |
@@ -95,6 +87,18 @@ console.log(node.toString());
 
 ### `fromPageSource(html).findElements(expression)`
 
+**Parameters:**
+
+| Param                      | Type                                       | Description                                                                                                                            |
+| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
+| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+
+**Returns:** DocumentFragment
+
+**Example**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/fromPageSource.findElements.js) -->
 <!-- The below code snippet is automatically added from examples/fromPageSource.findElements.js -->
 
@@ -128,6 +132,20 @@ nodes.length = 158
 
 ### `fromNode(xml).findElement(expression)`
 
+> Making XPath query against an XML node.
+
+**Parameters:**
+
+| Param                      | Type                                       | Description                                                                                                                            |
+| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
+| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+
+**Returns:** DocumentFragment
+
+**Example**:
+
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/fromNode.findElement.js) -->
 <!-- The below code snippet is automatically added from examples/fromNode.findElement.js -->
 
@@ -154,6 +172,18 @@ console.log(node.toString());
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `fromNode(xml).findElements(expression)`
+
+**Parameters:**
+
+| Param                      | Type                                       | Description                                                                                                                            |
+| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
+| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+
+**Returns:** DocumentFragment
+
+**Example**:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/fromNode.findElements.js) -->
 <!-- The below code snippet is automatically added from examples/fromNode.findElements.js -->
@@ -187,6 +217,18 @@ length = 102
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `getTagName()`
+
+**Parameters:**
+
+| Param                      | Type                                       | Description                                                                                                                            |
+| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
+| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+
+**Returns:** DocumentFragment
+
+**Example**:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/getTagName.js) -->
 <!-- The below code snippet is automatically added from examples/getTagName.js -->
@@ -222,6 +264,18 @@ img
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `getText()`
+
+**Parameters:**
+
+| Param                      | Type                                       | Description                                                                                                                            |
+| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
+| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+
+**Returns:** DocumentFragment
+
+**Example**:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/getText.js) -->
 <!-- The below code snippet is automatically added from examples/getText.js -->
