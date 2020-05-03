@@ -1,5 +1,8 @@
 # XPath HTML
 
+[![Version](https://img.shields.io/npm/v/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
+[![NPM](https://img.shields.io/npm/dm/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
+
 > Easily use XPath to locate any element in an HTML DOM page.
 
 ## Table of Contents
@@ -17,8 +20,10 @@
 
 ## Installation
 
+**`XPath HTML`** is available as a package on [NPM](https://www.npmjs.com/):
+
 ```shell script
-npm install --save-exact xpath-html
+npm install --save xpath-html
 ```
 
 ## Usages
@@ -36,3 +41,11 @@ npm install --save-exact xpath-html
 ## License
 
 MIT
+
+
+## References
+
+- https://github.com/goto100/xpath
+- https://github.com/jindw/xmldom
+- https://github.com/inikulin/parse5
+- https://github.com/cburgmer/xmlserializer
