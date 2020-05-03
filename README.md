@@ -77,7 +77,8 @@ console.log(`Your full text is "${node.getText()}"`);
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ```shell script
-curl https://www.shopback.sg -o shopback.html
+# The quickest way to download the file above
+$ curl https://www.shopback.sg -o shopback.html
 ```
 
 Boom 💥 your result should be:
