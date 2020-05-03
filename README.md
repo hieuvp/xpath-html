@@ -7,6 +7,14 @@
 
 > Easily use XPath to locate any element in an HTML DOM page.
 
+You can extract, edit and evaluate XPath queries on any web page with ease using XPath Helper.
+Its very simple and the user base is more compared to other plugins in this list.
+Simply click on the extension to open the console to write or edit the XPath.
+
+Working as beautiful as Chrome DevTools Engine,
+If you want to learn more about XPath, please take a visit to here,
+I made a concisely tutorial for you to read.
+
 <br />
 
 ## Table of Contents
@@ -16,6 +24,7 @@
 
 - [Installation](#installation)
 - [Usages](#usages)
+  - [Hello `XPath HTML`](#hello-xpath-html)
   - [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
   - [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression)
   - [`fromNode(xml).findElement(expression)`](#fromnodexmlfindelementexpression)
@@ -36,6 +45,39 @@ npm install --save xpath-html
 ```
 
 ## Usages
+
+`xpath-html` supported queries against html format as well as xml,
+that results from...
+Sub section from previous results.
+Extensive APIs
+
+### Hello `XPath HTML`
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/hello.js) -->
+<!-- The below code snippet is automatically added from examples/hello.js -->
+
+```js
+const fs = require("fs");
+const xpath = require("xpath-html");
+
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
+const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
+
+console.log(`Your tag name is "${node.getTagName()}"`);
+console.log(`The matching text is "${node.getText()}"`);
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/hello.txt) -->
+<!-- The below code snippet is automatically added from output/hello.txt -->
+
+```txt
+Your tag name is "div"
+The matching text is "Made with love by"
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ### `fromPageSource(html).findElement(expression)`
 
@@ -234,8 +276,8 @@ length = 102
 <!-- The below code snippet is automatically added from examples/node.getTagName.js -->
 
 ```js
-const xpath = require("xpath-html");
 const fs = require("fs");
+const xpath = require("xpath-html");
 
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
@@ -281,8 +323,8 @@ img
 <!-- The below code snippet is automatically added from examples/node.getText.js -->
 
 ```js
-const xpath = require("xpath-html");
 const fs = require("fs");
+const xpath = require("xpath-html");
 
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
