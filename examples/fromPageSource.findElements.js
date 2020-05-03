@@ -6,7 +6,7 @@ const nodes = xpath
   .fromPageSource(html)
   .findElements("//img[starts-with(@src, 'https://cloud.shopback.com')]");
 
-console.log(nodes.toString());
 console.log('nodes.length =', nodes.length);
 
 console.log(nodes[0].toString());
+console.log(nodes[1].toString());
