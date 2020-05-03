@@ -3,7 +3,7 @@
 set -eou pipefail
 
 readonly EXAMPLE_PATH="examples"
-readonly OUTPUT_PATH="${EXAMPLE_PATH}/output"
+readonly OUTPUT_PATH="output"
 
 readonly REGEX="^${EXAMPLE_PATH}\/(.+)\.js$"
 
@@ -24,7 +24,7 @@ run() {
 
   printf "\e[33mProducing output: %s\e[0m\n" "$filepath"
 
-  node "$filepath" > "${OUTPUT_PATH}/${filename}.console"
+  node "$filepath" > "${OUTPUT_PATH}/${filename}.txt"
 }
 
 for filename in "${FILENAMES[@]}"; do

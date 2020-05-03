@@ -9,3 +9,6 @@
 
 # External Dependencies
 node_modules/
+
+# Generated Results of Examples
+output/

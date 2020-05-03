@@ -7,6 +7,8 @@
 
 > Easily use XPath to locate any element in an HTML DOM page.
 
+<br />
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -84,10 +86,10 @@ console.log(`${node.tagName}: ${node.firstChild.data}`);
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/fromPageSource.findElement.console) -->
-<!-- The below code snippet is automatically added from examples/output/fromPageSource.findElement.console -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/fromPageSource.findElement.txt) -->
+<!-- The below code snippet is automatically added from output/fromPageSource.findElement.txt -->
 
-```console
+```txt
 <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 div: Made with love by
 ```
@@ -114,10 +116,10 @@ console.log(`Node: ${nodes[0].toString()}`);
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/fromPageSource.findElements.console) -->
-<!-- The below code snippet is automatically added from examples/output/fromPageSource.findElements.console -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/fromPageSource.findElements.txt) -->
+<!-- The below code snippet is automatically added from output/fromPageSource.findElements.txt -->
 
-```console
+```txt
 <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 div: Made with love by
 Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
@@ -135,10 +137,10 @@ Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/fromNode.findElement.console) -->
-<!-- The below code snippet is automatically added from examples/output/fromNode.findElement.console -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/fromNode.findElement.txt) -->
+<!-- The below code snippet is automatically added from output/fromNode.findElement.txt -->
 
-```console
+```txt
 
 ```
 
@@ -154,10 +156,10 @@ Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/fromNode.findElements.console) -->
-<!-- The below code snippet is automatically added from examples/output/fromNode.findElements.console -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/fromNode.findElements.txt) -->
+<!-- The below code snippet is automatically added from output/fromNode.findElements.txt -->
 
-```console
+```txt
 
 ```
 
@@ -175,10 +177,10 @@ Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/getTagName.console) -->
-<!-- The below code snippet is automatically added from examples/output/getTagName.console -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/getTagName.txt) -->
+<!-- The below code snippet is automatically added from output/getTagName.txt -->
 
-```console
+```txt
 
 ```
 
@@ -196,10 +198,10 @@ Node: <div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/output/getText.console) -->
-<!-- The below code snippet is automatically added from examples/output/getText.console -->
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/getText.txt) -->
+<!-- The below code snippet is automatically added from output/getText.txt -->
 
-```console
+```txt
 
 ```
 
