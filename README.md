@@ -54,8 +54,6 @@ Extensive APIs
 
 ### Hello XPath for HTML
 
-**Example**:
-
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/hello.js) -->
 <!-- The below code snippet is automatically added from examples/hello.js -->
 
@@ -63,12 +61,13 @@ Extensive APIs
 const fs = require("fs");
 const xpath = require("xpath-html");
 
-// Assuming you've got an html file
+// Assuming you have an html file locally,
+// here the content I scraped from www.shopback.sg
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 
 // Don't worry much about the input,
 // you could be able to use an HTML response from an HTTP request
-// As long as, the argument is a string type, everything should be fine.
+// As long as the argument is a string type, everything should be fine.
 const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
 
 console.log(`The matching tag is "${node.getTagName()}"`);
@@ -77,7 +76,11 @@ console.log(`Your full text is "${node.getText()}"`);
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-Boom, your result should be:
+```shell script
+curl https://www.shopback.sg -o shopback.html
+```
+
+Boom 💥 your result should be:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/hello.txt) -->
 <!-- The below code snippet is automatically added from output/hello.txt -->

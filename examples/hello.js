@@ -1,8 +1,8 @@
 const fs = require('fs');
 const xpath = require('xpath-html');
 
-// Assuming you've got an html file locally,
-// here is a file which I scraped from www.shopback.sg
+// Assuming you have an html file locally,
+// here the content I scraped from www.shopback.sg
 const html = fs.readFileSync(`${__dirname}/shopback.html`, 'utf8');
 
 // Don't worry much about the input,
