@@ -18,14 +18,20 @@
 ## Installation
 
 ```shell script
-npm install xpath-html
+npm install --save-exact xpath-html
 ```
 
 ## Usages
 
 ### `queryFromPageSource`
 
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromNode.js) -->
+<!-- AUTO-GENERATED-CONTENT:END -->
+
 ### `queryFromNode`
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/queryFromPageSource.js) -->
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ## License
 

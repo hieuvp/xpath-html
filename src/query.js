@@ -6,6 +6,8 @@ const parser = require('parse5');
 
 const composeExpressionWithNamespace = require('./composeExpressionWithNamespace');
 
+const DEFAULT_NAMESPACE = 'x';
+
 /**
  *
  * @param {string} expression
@@ -14,11 +16,9 @@ const composeExpressionWithNamespace = require('./composeExpressionWithNamespace
  * @returns {object}
  */
 const queryFromNode = (expression, node, single = false) => {
-  const document = new DOMParser().parseFromString(node);
-  const namespace = 'x';
-  const select = xpath.useNamespaces({ [namespace]: 'http://www.w3.org/1999/xhtml' });
-
-  const enhancedExpression = composeExpressionWithNamespace(expression, namespace);
+  const document = new DOMParser().parseFromString(node.toString());
+  const select = xpath.useNamespaces({ [DEFAULT_NAMESPACE]: 'http://www.w3.org/1999/xhtml' });
+  const enhancedExpression = composeExpressionWithNamespace(expression, DEFAULT_NAMESPACE);
 
   return select(enhancedExpression, document, single);
 };

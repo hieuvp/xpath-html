@@ -2,7 +2,12 @@
 
 set -eoux pipefail
 
-rm -rf node_modules
-rm -f package-lock.json
+run() {
+  rm -rf node_modules
+  rm -f package-lock.json
 
-npm install
+  npm install
+}
+
+(cd . && run)
+(cd examples && run)
