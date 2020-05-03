@@ -76,7 +76,7 @@ interface XPathSelect {
 const xpath = require("xpath-html");
 const fs = require("fs");
 
-const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
 console.log(node.toString());
@@ -102,7 +102,7 @@ console.log(node.toString());
 const xpath = require("xpath-html");
 const fs = require("fs");
 
-const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const nodes = xpath
   .fromPageSource(html)
   .findElements("//img[starts-with(@src, 'https://cloud.shopback.com')]");
@@ -135,7 +135,7 @@ nodes.length = 158
 const xpath = require("xpath-html");
 const fs = require("fs");
 
-const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-group']");
 
 const node = xpath.fromNode(group).findElement("//a[@href='/aliexpress']");
@@ -162,7 +162,7 @@ console.log(node.toString());
 const xpath = require("xpath-html");
 const fs = require("fs");
 
-const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-group']");
 
 const nodes = xpath.fromNode(group).findElements("//img[@class='store-logo']");
@@ -192,13 +192,10 @@ length = 102
 <!-- The below code snippet is automatically added from examples/getTagName.js -->
 
 ```js
-// One element
-// Multiple elements
-
 const xpath = require("xpath-html");
 const fs = require("fs");
 
-const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
 console.log(node.getTagName());
@@ -233,7 +230,7 @@ img
 const xpath = require("xpath-html");
 const fs = require("fs");
 
-const html = fs.readFileSync(`${__dirname}/shopback.html`, "UTF-8");
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
 console.log(node.getText());

@@ -1,10 +1,7 @@
-// One element
-// Multiple elements
-
 const xpath = require('xpath-html');
 const fs = require('fs');
 
-const html = fs.readFileSync(`${__dirname}/shopback.html`, 'UTF-8');
+const html = fs.readFileSync(`${__dirname}/shopback.html`, 'utf8');
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
 console.log(node.getTagName());
