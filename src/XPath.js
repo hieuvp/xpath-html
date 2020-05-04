@@ -2,7 +2,7 @@ const { DOMParser } = require('xmldom');
 const xpath = require('xpath');
 
 const composeExpressionWithNamespace = require('./composeExpressionWithNamespace');
-const enhanceElement = require('./enhanceElement');
+const extendElement = require('./extendElement');
 
 const DEFAULT_NAMESPACE = 'x';
 
@@ -32,7 +32,7 @@ class XPath {
     const enhancedExpression = composeExpressionWithNamespace(expression, DEFAULT_NAMESPACE);
 
     const node = this.select(enhancedExpression, this.document, single);
-    enhanceElement(node);
+    extendElement(node);
 
     return node;
   }
@@ -46,7 +46,7 @@ class XPath {
     const enhancedExpression = composeExpressionWithNamespace(expression, DEFAULT_NAMESPACE);
 
     const nodes = this.select(enhancedExpression, this.document, single);
-    nodes.forEach((node) => enhanceElement(node));
+    nodes.forEach((node) => extendElement(node));
 
     return nodes;
   }
