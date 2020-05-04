@@ -66,12 +66,6 @@ git-pre-merge: test output-examples git-add
 clean-install:
 	@printf "\n"
 	scripts/clean-install.sh
-<<<<<<< HEAD
-
-.PHONY: output-examples
-output-examples:
-	scripts/output-examples.sh
-=======
 	@printf "\n"
 
 .PHONY: output-examples
@@ -79,4 +73,3 @@ output-examples:
 	@printf "\n"
 	scripts/output-examples.sh
 	@printf "\n"
->>>>>>> master
