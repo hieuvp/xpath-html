@@ -64,8 +64,12 @@ git-pre-merge: test output-examples git-add
 
 .PHONY: clean-install
 clean-install:
+	@printf "\n"
 	scripts/clean-install.sh
+	@printf "\n"
 
 .PHONY: output-examples
 output-examples:
+	@printf "\n"
 	scripts/output-examples.sh
+	@printf "\n"
