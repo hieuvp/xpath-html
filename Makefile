@@ -1,7 +1,15 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Standard
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .PHONY: fmt
 fmt:
 	@printf "\n"
 	$(MAKEFILE_SCRIPT_PATH)/fmt-shell.sh
+	@printf "\n"
+
+	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/fmt-yaml.sh
 	@printf "\n"
 
 	@printf "\n"
@@ -23,6 +31,10 @@ lint:
 	$(MAKEFILE_SCRIPT_PATH)/lint-shell.sh
 	@printf "\n"
 
+	@printf "\n"
+	$(MAKEFILE_SCRIPT_PATH)/lint-yaml.sh
+	@printf "\n"
+
 .PHONY: test
 test:
 	npx jest
@@ -31,12 +43,29 @@ test:
 test-ci:
 	npx jest --ci --bail
 
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Git
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .PHONY: git-add
-git-add: fmt lint test
+git-add: fmt lint
 	@printf "\n"
 	git add --all .
 	@printf "\n"
 
+.PHONY: git-pre-merge
+git-pre-merge: test output-examples git-add
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Utils
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .PHONY: clean-install
 clean-install:
 	scripts/clean-install.sh
+
+.PHONY: output-examples
+output-examples:
+	scripts/output-examples.sh
