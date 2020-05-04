@@ -7,13 +7,17 @@
 
 > Easily use XPath to locate any element in an HTML DOM page.
 
-You can extract, edit and evaluate XPath queries on any web page with ease using XPath Helper.
-Its very simple and the user base is more compared to other plugins in this list.
-Simply click on the extension to open the console to write or edit the XPath.
+**XPath** stands for **XML Path Language**.
+It uses a non-XML syntax to provide a flexible way
+of addressing (pointing to) different parts of an XML document.
 
-Working as beautiful as Chrome DevTools Engine,
-If you want to learn more about XPath, please take a visit to here,
-I made a concisely tutorial for you to read.
+With **XPath HTML**,
+it enabled us this powerful tool to navigate through the HTML DOM using **XPath Expression**.
+
+If you want to learn more about the XPath
+and how to use different XPath expression for finding the complex or dynamic elements.
+Checkout this concise tutorial
+[here](https://github.com/hieuvp/learning-automation-tools/blob/master/xpath/README.md).
 
 <br />
 
@@ -96,6 +100,7 @@ Your full text is "Made with love by"
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+Its very simple
 This is a great example that help you to get started,
 if you want to dive more into details please looking at the APIs below.
 
@@ -119,7 +124,7 @@ interface XPathSelect {
 }
 ```
 
-**Parameters:**
+**Arguments:**
 
 | Name         | Type     | Description          |
 | ------------ | -------- | -------------------- |
@@ -164,7 +169,7 @@ console.log(node.toString());
 > Refer to the documentation on #findElement(by)
 > for information on element locator strategies.
 
-**Parameters:**
+**Arguments:**
 
 | Name         | Type     | Description          |
 | ------------ | -------- | -------------------- |
@@ -214,7 +219,7 @@ nodes.length = 158
 
 > Making XPath query against an XML node.
 
-**Parameters:**
+**Arguments:**
 
 | Param                 | Type                                       | Description                                                                                                                            |
 | --------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -256,7 +261,8 @@ console.log(node.toString());
 
 ### `fromNode(xml).findElements(expression)`
 
-**Parameters:**
+**Arguments:**
+**Arguments:**
 
 | Param                      | Type                                       | Description                                                                                                                            |
 | -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -307,7 +313,7 @@ length = 2
 
 > Retrieve the node's tag name.
 
-**Parameters:** None
+**Arguments:** None
 
 **Returns:** `string`
 
@@ -354,7 +360,7 @@ img
 
 > Get the visible innerText of this node.
 
-**Parameters:** None
+**Arguments:** None
 
 **Returns:** `string`
 
