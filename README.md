@@ -7,7 +7,7 @@
 
 <br />
 
-**XPath** stands for **XML Path Language**.
+**XPath** stands for **XML Path Language**.<br />
 It provides a flexible **non-XML syntax** to address (point to) different parts of an XML document.
 
 > With the **XPath HTML**,
