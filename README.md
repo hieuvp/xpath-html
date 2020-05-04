@@ -96,6 +96,8 @@ Your full text is "Made with love by"
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+<br />
+
 It is understandable, right? <br />
 Now, you can scroll down the APIs below and diving into details.
 
@@ -402,7 +404,7 @@ Text of nodes[1]: Up to 7.0% Cashback
 ## Dependencies
 
 Special thanks to all contributors of these libraries
-which are the foundation of which `xpath-html` was built upon.
+which are the foundation of what `xpath-html` was built upon.
 
 1. [xpath](https://github.com/goto100/xpath)
 1. [xmldom](https://github.com/jindw/xmldom)
