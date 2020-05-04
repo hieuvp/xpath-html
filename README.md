@@ -101,6 +101,7 @@ Your full text is "Made with love by"
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 It is very simple, right?
+<br />
 Now, you can scroll down to the APIs below and diving into details.
 
 <br />
