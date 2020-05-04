@@ -29,7 +29,7 @@ Checkout this concise tutorial
 
 - [Installation](#installation)
 - [Usages](#usages)
-  - [Hello XPath for HTML](#hello-xpath-for-html)
+  - [Hello XPath from HTML](#hello-xpath-from-html)
   - [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
   - [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression)
   - [`fromNode(xml).findElement(expression)`](#fromnodexmlfindelementexpression)
@@ -52,12 +52,7 @@ npm install --save xpath-html
 
 ## Usages
 
-`xpath-html` supported queries against html format as well as xml,
-that results from...
-Sub section from previous results.
-Extensive APIs
-
-### Hello XPath for HTML
+### Hello XPath from HTML
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/hello.js) -->
 <!-- The below code snippet is automatically added from examples/hello.js -->
@@ -67,12 +62,12 @@ const fs = require("fs");
 const xpath = require("xpath-html");
 
 // Assuming you have an html file locally,
-// here the content I scraped from www.shopback.sg
+// here is the content I scraped from www.shopback.sg
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 
-// Don't worry much about the input,
-// you could be able to use an HTML response from an HTTP request
-// As long as the argument is a string type, everything should be fine.
+// Don't worry about the input much,
+// you could be able to use an HTML response of an HTTP request
+// As long as the args is a string type, everything should be fine.
 const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
 
 console.log(`The matching tag is "${node.getTagName()}"`);
@@ -82,10 +77,10 @@ console.log(`Your full text is "${node.getText()}"`);
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ```shell script
-# The quickest way to download the file above
+# A fast way to download .html file above
 $ curl https://www.shopback.sg -o shopback.html
 
-# Or even from GitHub
+# Or even from my GitHub examples
 $ curl -O https://raw.githubusercontent.com/hieuvp/xpath-html/master/examples/shopback.html
 ```
 
@@ -116,14 +111,6 @@ Now, you can scroll down the APIs below and diving into details.
 > do not expect it to be formatted
 > or escaped in the same way as the raw response sent from the web server.
 
-```ts
-type SelectedValue = Node | Attr | string | number | boolean;
-interface XPathSelect {
-  (expression: string, node?: Node): Array<SelectedValue>;
-  (expression: string, node: Node, single: true): SelectedValue;
-}
-```
-
 **Arguments:**
 
 | Name         | Type     | Description          |
@@ -131,7 +118,7 @@ interface XPathSelect {
 | `html`       | `string` | Input HTML string    |
 | `expression` | `string` | The XPath expression |
 
-**Returns:** `SelectedElement`
+**Returns:** `Node`
 
 **Example**:
 
@@ -176,7 +163,7 @@ console.log(node.toString());
 | `html`       | `string` | Input HTML string    |
 | `expression` | `string` | The XPath expression |
 
-**Returns:** `Array<SelectedElement>`
+**Returns:** `Array<Node>`
 
 **Example**:
 
@@ -223,10 +210,10 @@ nodes.length = 158
 
 | Param                 | Type                                       | Description                                                                                                                            |
 | --------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `xml` fragmentContext | `SelectedElement` or `string`              | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| `xml` fragmentContext | `Node` or `string`                         | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
 | `expression` options  | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
 
-**Returns:** `SelectedElement`
+**Returns:** `Node`
 
 **Example**:
 
@@ -262,7 +249,6 @@ console.log(node.toString());
 ### `fromNode(xml).findElements(expression)`
 
 **Arguments:**
-**Arguments:**
 
 | Param                      | Type                                       | Description                                                                                                                            |
 | -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -270,7 +256,7 @@ console.log(node.toString());
 | html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
 | `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
 
-**Returns:** `Array<SelectedElement>`
+**Returns:** `Array<Node>`
 
 **Example**:
 
