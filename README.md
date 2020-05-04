@@ -401,7 +401,7 @@ Up to 7.0% Cashback
 ## Dependencies
 
 Special thanks to all contributors of these libraries
-which are the foundation of which **`xpath-html`** was built upon.
+which are the foundation of which `xpath-html` was built upon.
 
 1. [xpath](https://github.com/goto100/xpath)
 1. [xmldom](https://github.com/jindw/xmldom)
@@ -412,4 +412,4 @@ which are the foundation of which **`xpath-html`** was built upon.
 
 MIT
 
-Made with ❤ in [ShopBack](https://www.shopback.com/)
+Made with ❤ from [ShopBack](https://www.shopback.com/)
