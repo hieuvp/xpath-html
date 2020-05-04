@@ -4,7 +4,7 @@ const { serializeToString } = require('xmlserializer');
 const XPath = require('./XPath');
 
 /**
- * @param {string} xml
+ * @param {object|string} xml
  * @returns {XPath}
  */
 const fromNode = (xml) => new XPath(xml.toString());

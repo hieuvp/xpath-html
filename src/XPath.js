@@ -25,7 +25,7 @@ class XPath {
 
   /**
    * @param {string} expression
-   * @returns {*}
+   * @returns {object}
    */
   findElement(expression) {
     const single = true;
@@ -39,7 +39,7 @@ class XPath {
 
   /**
    * @param {string} expression
-   * @returns {*}
+   * @returns {Array<object>}
    */
   findElements(expression) {
     const single = false;
