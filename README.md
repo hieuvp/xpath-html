@@ -5,8 +5,6 @@
 [![Version](https://img.shields.io/npm/v/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
 [![NPM](https://img.shields.io/npm/dm/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
 
-> Easily use XPath to locate any element in an HTML DOM page.
-
 <br />
 
 **XPath** stands for **XML Path Language**.
