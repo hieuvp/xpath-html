@@ -80,11 +80,11 @@ console.log(`Your full text is "${node.getText()}"`);
 # A fast way to download .html file above
 $ curl https://www.shopback.sg -o shopback.html
 
-# Or can try from my GitHub examples
+# Or try from my GitHub examples
 $ curl -O https://raw.githubusercontent.com/hieuvp/xpath-html/master/examples/shopback.html
 ```
 
-Bang 💥 the output should be something looks like:
+Bang 💥 the **output** should be something looks like:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/hello.txt) -->
 <!-- The below code snippet is automatically added from output/hello.txt -->
