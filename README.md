@@ -80,7 +80,8 @@ console.log(`Your full text is "${node.getText()}"`);
 # The quickest way to download the file above
 $ curl https://www.shopback.sg -o shopback.html
 
-# Or from GitHub
+# Or even from GitHub
+$ curl -O https://raw.githubusercontent.com/hieuvp/xpath-html/master/examples/shopback.html
 ```
 
 Bang 💥 the output should be something looks like:
@@ -103,6 +104,12 @@ if you want to dive more into details please looking at the APIs below.
 ### `fromPageSource(html).findElement(expression)`
 
 > Making XPath query against an HTML document.
+> Locates an element on the page.
+> If the element cannot be found, a error.NoSuchElementError will be returned by the driver.
+> Retrieves the current page's source.
+> The returned source is a representation of the underlying DOM:
+> do not expect it to be formatted
+> or escaped in the same way as the raw response sent from the web server.
 
 ```ts
 type SelectedValue = Node | Attr | string | number | boolean;
@@ -114,7 +121,7 @@ interface XPathSelect {
 
 **Parameters:**
 
-| Param                      | Type                                       | Description                                                                                                                            |
+| Name                       | Type                                       | Description                                                                                                                            |
 | -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
 | `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
 | html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
@@ -153,6 +160,10 @@ console.log(node.toString());
 <br />
 
 ### `fromPageSource(html).findElements(expression)`
+
+> Search for multiple elements on the page.
+> Refer to the documentation on #findElement(by)
+> for information on element locator strategies.
 
 **Parameters:**
 
@@ -297,15 +308,11 @@ length = 2
 
 ### `node.getTagName()`
 
-**Parameters:**
+> Retrieve the node's tag name.
 
-| Param                      | Type                                       | Description                                                                                                                            |
-| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
-| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+**Parameters:** None
 
-**Returns:** DocumentFragment
+**Returns:** `string`
 
 **Example**:
 
@@ -348,15 +355,11 @@ img
 
 ### `node.getText()`
 
-**Parameters:**
+> Get the visible innerText of this node.
 
-| Param                      | Type                                       | Description                                                                                                                            |
-| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
-| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+**Parameters:** None
 
-**Returns:** DocumentFragment
+**Returns:** `string`
 
 **Example**:
 
