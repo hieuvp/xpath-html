@@ -8,7 +8,7 @@ console.log(node.getText());
 
 const nodes = xpath
   .fromPageSource(html)
-  .findElements("//img[starts-with(@src, 'https://cloud.shopback.com')]");
+  .findElements("//div[@id='home-page-container']//*[@class='title-text']");
 
 console.log(nodes[0].getText());
 console.log(nodes[1].getText());

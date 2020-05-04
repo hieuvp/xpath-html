@@ -4,7 +4,7 @@ const xpath = require('xpath-html');
 const html = fs.readFileSync(`${__dirname}/shopback.html`, 'utf8');
 const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-group']");
 
-const nodes = xpath.fromNode(group).findElements("//img[@class='store-logo']");
+const nodes = xpath.fromNode(group).findElements("//img[contains(@src,'shopily')]");
 
 console.log('length =', nodes.length);
 

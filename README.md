@@ -268,7 +268,7 @@ const xpath = require("xpath-html");
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-group']");
 
-const nodes = xpath.fromNode(group).findElements("//img[@class='store-logo']");
+const nodes = xpath.fromNode(group).findElements("//img[contains(@src,'shopily')]");
 
 console.log("length =", nodes.length);
 
@@ -284,9 +284,9 @@ console.log(nodes[1].toString());
 <!-- The below code snippet is automatically added from output/fromNode.findElements.txt -->
 
 ```txt
-length = 102
-<img class="store-logo" src="https://cloud.shopback.com/t_sd_250_pad,f_auto,fl_lossy,q_auto/sg-store/1012/1012_logo_2ef6161b.png" alt="Taobao Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
-<img class="store-logo" src="https://cloud.shopback.com/t_sd_250_pad,f_auto,fl_lossy,q_auto/sg-store/49/49_logo_86958e96.png" alt="AliExpress Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
+length = 2
+<img class="store-logo" src="https://shopily-sg.s3.amazonaws.com/uploads/stores/504/504_logo_200c4121.png" alt="zChocolat Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
+<img class="store-logo" src="https://shopily-sg.s3.amazonaws.com/uploads/stores/2498/2498_logo_81f0a24d.png" alt="Bed Bath &amp; Beyond Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -372,7 +372,7 @@ console.log(node.getText());
 
 const nodes = xpath
   .fromPageSource(html)
-  .findElements("//img[starts-with(@src, 'https://cloud.shopback.com')]");
+  .findElements("//div[@id='home-page-container']//*[@class='title-text']");
 
 console.log(nodes[0].getText());
 console.log(nodes[1].getText());
@@ -387,8 +387,8 @@ console.log(nodes[1].getText());
 
 ```txt
 Made with love by
-undefined
-undefined
+Up to 10.0% Cash Rewards
+Up to 7.0% Cashback
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
