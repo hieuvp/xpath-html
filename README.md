@@ -23,8 +23,6 @@ know how to use different **XPath expression** for finding complex or dynamic el
 take a visit to this concise tutorial
 [here](https://github.com/hieuvp/learning-automation-tools/blob/master/xpath/README.md).
 
-<br />
-
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
