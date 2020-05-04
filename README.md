@@ -1,6 +1,6 @@
 # XPath HTML
 
-[![CI](https://github.com/hieuvp/xpath-html/workflows/ci/badge.svg?branch=master)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3Aci+branch%3Amaster)
+[![CI](https://github.com/hieuvp/xpath-html/workflows/CI/badge.svg?branch=master)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3ACI+branch%3Amaster)
 [![Release](https://github.com/hieuvp/xpath-html/workflows/release/badge.svg)](https://github.com/hieuvp/xpath-html/actions?query=workflow%3arelease)
 [![Version](https://img.shields.io/npm/v/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
 [![NPM](https://img.shields.io/npm/dm/xpath-html.svg)](https://www.npmjs.com/package/xpath-html)
