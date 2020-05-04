@@ -15,9 +15,9 @@ It provides a flexible **non-XML syntax** to address (point to) different parts 
 With the **XPath HTML**,
 it enabled us to use this powerful tool navigating through the **HTML DOM** by **XPath Expression**.
 
-If you want to learn more about the XPath
-and how to use different XPath expression for finding the complex or dynamic elements.
-Checkout this concise tutorial
+If you want to learn more about the **XPath** and
+know how to use different **XPath Expression** for finding the complex or dynamic elements.
+Take a visit to this concise tutorial
 [here](https://github.com/hieuvp/learning-automation-tools/blob/master/xpath/README.md).
 
 <br />
@@ -29,7 +29,7 @@ Checkout this concise tutorial
 
 - [Installation](#installation)
 - [Usages](#usages)
-  - [Hello XPath from HTML](#hello-xpath-from-html)
+  - [Hello XPath from HTML World](#hello-xpath-from-html-world)
   - [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
   - [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression)
   - [`fromNode(xhtml).findElement(expression)`](#fromnodexhtmlfindelementexpression)
@@ -44,7 +44,7 @@ Checkout this concise tutorial
 ## Installation
 
 [`xpath-html`](https://www.npmjs.com/package/xpath-html) is available as a package on [NPM](https://www.npmjs.com/),
-open up a **Terminal** and run the following command:
+open up a **Terminal** and enter the following command:
 
 ```shell script
 npm install --save xpath-html
@@ -52,7 +52,7 @@ npm install --save xpath-html
 
 ## Usages
 
-### Hello XPath from HTML
+### Hello XPath from HTML World
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/hello.js) -->
 <!-- The below code snippet is automatically added from examples/hello.js -->
@@ -84,7 +84,7 @@ $ curl https://www.shopback.sg -o shopback.html
 $ curl -O https://raw.githubusercontent.com/hieuvp/xpath-html/master/examples/shopback.html
 ```
 
-Bang 💥 the **output** should be something looks like:
+Bang 💥 **Output** should be something looks like:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/hello.txt) -->
 <!-- The below code snippet is automatically added from output/hello.txt -->
@@ -96,7 +96,7 @@ Your full text is "Made with love by"
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-It is very simple, right? <br />
+It is understandable, right? <br />
 Now, you can scroll down the APIs below and diving into details.
 
 <br />
@@ -105,8 +105,6 @@ Now, you can scroll down the APIs below and diving into details.
 
 > Making XPath query against an HTML document.
 > Locates an element on the page.
-> If the element cannot be found, a error.NoSuchElementError will be returned by the driver.
-> Retrieves the current page's source.
 > The returned source is a representation of the underlying DOM:
 > do not expect it to be formatted
 > or escaped in the same way as the raw response sent from the web server.
