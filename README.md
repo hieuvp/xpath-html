@@ -208,10 +208,10 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 **Arguments:**
 
-| Param                 | Type                                       | Description                                                                                                                            |
-| --------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `xml` fragmentContext | `Node` or `string`                         | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| `expression` options  | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+| Name         | Type               | Description                                                                                                                            |
+| ------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `xml`        | `Node` or `string` | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| `expression` | `string`           | The given XPath expression                                                                                                             |
 
 **Returns:** `Node`
 
@@ -255,11 +255,10 @@ console.log(node.toString());
 
 **Arguments:**
 
-| Param                      | Type                                       | Description                                                                                                                            |
-| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
-| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+| Name         | Type               | Description                                                                                                                            |
+| ------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `xml`        | `Node` or `string` | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| `expression` | `string`           | The given XPath expression                                                                                                             |
 
 **Returns:** `Array<Node>`
 
@@ -349,7 +348,7 @@ Second nodes[1] tag name: img
 
 ### `node.getText()`
 
-> Get the visible innerText of this node.
+> Get the visible **innerText** of this node.
 
 **Arguments:** None
 
