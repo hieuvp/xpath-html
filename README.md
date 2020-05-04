@@ -320,14 +320,14 @@ const xpath = require("xpath-html");
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
-console.log("node's tag name:", node.getTagName());
+console.log("Single node's tag name:", node.getTagName());
 
 const nodes = xpath
   .fromPageSource(html)
   .findElements("//img[starts-with(@src, 'https://cloud.shopback.com')]");
 
-console.log("nodes[0]'s tag name:", nodes[0].getTagName());
-console.log("nodes[1]'s tag name:", nodes[1].getTagName());
+console.log("First nodes[0] tag name:", nodes[0].getTagName());
+console.log("Second nodes[1] tag name:", nodes[1].getTagName());
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -338,9 +338,9 @@ console.log("nodes[1]'s tag name:", nodes[1].getTagName());
 <!-- The below code snippet is automatically added from output/node.getTagName.txt -->
 
 ```txt
-node's tag name: div
-nodes[0]'s tag name: img
-nodes[1]'s tag name: img
+Single node's tag name: div
+First nodes[0] tag name: img
+Second nodes[1] tag name: img
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -367,14 +367,14 @@ const xpath = require("xpath-html");
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
-console.log("text of node:", node.getText());
+console.log("Text of a single node:", node.getText());
 
 const nodes = xpath
   .fromPageSource(html)
   .findElements("//div[@id='home-page-container']//*[@class='title-text']");
 
-console.log("text of nodes[0]:", nodes[0].getText());
-console.log("text of nodes[1]:", nodes[1].getText());
+console.log("Text of nodes[0]:", nodes[0].getText());
+console.log("Text of nodes[1]:", nodes[1].getText());
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -385,9 +385,9 @@ console.log("text of nodes[1]:", nodes[1].getText());
 <!-- The below code snippet is automatically added from output/node.getText.txt -->
 
 ```txt
-text of node: Made with love by
-text of nodes[0]: Up to 10.0% Cash Rewards
-text of nodes[1]: Up to 7.0% Cashback
+Text of a single node: Made with love by
+Text of nodes[0]: Up to 10.0% Cash Rewards
+Text of nodes[1]: Up to 7.0% Cashback
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
