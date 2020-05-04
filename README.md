@@ -121,13 +121,12 @@ interface XPathSelect {
 
 **Parameters:**
 
-| Name                       | Type                                       | Description                                                                                                                            |
-| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
-| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+| Name         | Type     | Description          |
+| ------------ | -------- | -------------------- |
+| `html`       | `string` | Input HTML string    |
+| `expression` | `string` | The XPath expression |
 
-**Returns:** DocumentFragment
+**Returns:** `SelectedElement`
 
 **Example**:
 
@@ -167,13 +166,12 @@ console.log(node.toString());
 
 **Parameters:**
 
-| Param                      | Type                                       | Description                                                                                                                            |
-| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
-| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+| Name         | Type     | Description          |
+| ------------ | -------- | -------------------- |
+| `html`       | `string` | Input HTML string    |
+| `expression` | `string` | The XPath expression |
 
-**Returns:** DocumentFragment
+**Returns:** `Array<SelectedElement>`
 
 **Example**:
 
@@ -218,13 +216,12 @@ nodes.length = 158
 
 **Parameters:**
 
-| Param                      | Type                                       | Description                                                                                                                            |
-| -------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `Optional` fragmentContext | Element                                    | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
-| `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
+| Param                 | Type                                       | Description                                                                                                                            |
+| --------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `xml` fragmentContext | `SelectedElement` or `string`              | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| `expression` options  | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
 
-**Returns:** DocumentFragment
+**Returns:** `SelectedElement`
 
 **Example**:
 
@@ -267,7 +264,7 @@ console.log(node.toString());
 | html                       | `string`                                   | Input HTML fragment string.                                                                                                            |
 | `Optional` options         | [ParserOptions](options/parser-options.md) | Parsing options.                                                                                                                       |
 
-**Returns:** DocumentFragment
+**Returns:** `Array<SelectedElement>`
 
 **Example**:
 
