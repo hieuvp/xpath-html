@@ -6,7 +6,7 @@ const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-gro
 
 const nodes = xpath.fromNode(group).findElements("//img[contains(@src,'shopily')]");
 
-console.log('length =', nodes.length);
+console.log('Number of returned nodes:', nodes.length);
 
 console.log(nodes[0].toString());
 console.log(nodes[1].toString());

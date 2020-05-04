@@ -113,10 +113,10 @@ Now, you can scroll down the APIs below and diving into details.
 
 **Arguments:**
 
-| Name         | Type     | Description          |
-| ------------ | -------- | -------------------- |
-| `html`       | `string` | Input HTML string    |
-| `expression` | `string` | The XPath expression |
+| Name         | Type     | Description                |
+| ------------ | -------- | -------------------------- |
+| `html`       | `string` | Input HTML page's source   |
+| `expression` | `string` | The given XPath expression |
 
 **Returns:** `Node`
 
@@ -158,10 +158,10 @@ console.log(node.toString());
 
 **Arguments:**
 
-| Name         | Type     | Description          |
-| ------------ | -------- | -------------------- |
-| `html`       | `string` | Input HTML string    |
-| `expression` | `string` | The XPath expression |
+| Name         | Type     | Description                |
+| ------------ | -------- | -------------------------- |
+| `html`       | `string` | Input HTML page's source   |
+| `expression` | `string` | The given XPath expression |
 
 **Returns:** `Array<Node>`
 
@@ -179,7 +179,7 @@ const nodes = xpath
   .fromPageSource(html)
   .findElements("//img[starts-with(@src, 'https://cloud.shopback.com')]");
 
-console.log("nodes.length =", nodes.length);
+console.log("Number of returned nodes:", nodes.length);
 
 console.log(nodes[0].toString());
 console.log(nodes[1].toString());
@@ -193,7 +193,7 @@ console.log(nodes[1].toString());
 <!-- The below code snippet is automatically added from output/fromPageSource.findElements.txt -->
 
 ```txt
-nodes.length = 158
+Number of returned nodes: 158
 <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/sb-logo.png" xmlns="http://www.w3.org/1999/xhtml"/>
 <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/desktop/icon-raf.svg" xmlns="http://www.w3.org/1999/xhtml"/>
 ```
@@ -272,7 +272,7 @@ const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-gro
 
 const nodes = xpath.fromNode(group).findElements("//img[contains(@src,'shopily')]");
 
-console.log("length =", nodes.length);
+console.log("Number of returned nodes:", nodes.length);
 
 console.log(nodes[0].toString());
 console.log(nodes[1].toString());
@@ -286,7 +286,7 @@ console.log(nodes[1].toString());
 <!-- The below code snippet is automatically added from output/fromNode.findElements.txt -->
 
 ```txt
-length = 2
+Number of returned nodes: 2
 <img class="store-logo" src="https://shopily-sg.s3.amazonaws.com/uploads/stores/504/504_logo_200c4121.png" alt="zChocolat Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
 <img class="store-logo" src="https://shopily-sg.s3.amazonaws.com/uploads/stores/2498/2498_logo_81f0a24d.png" alt="Bed Bath &amp; Beyond Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
 ```
