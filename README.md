@@ -7,12 +7,14 @@
 
 > Easily use XPath to locate any element in an HTML DOM page.
 
+<br />
+
 **XPath** stands for **XML Path Language**.
 It uses a non-XML syntax to provide a flexible way
 of addressing (pointing to) different parts of an XML document.
 
 With **XPath HTML**,
-it enabled us this powerful tool to navigate through the HTML DOM using **XPath Expression**.
+it enabled us to use this powerful tool navigating through the **HTML DOM** by **XPath Expression**.
 
 If you want to learn more about the XPath
 and how to use different XPath expression for finding the complex or dynamic elements.
@@ -100,9 +102,8 @@ Your full text is "Made with love by"
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-It is very simple, right?
-<br />
-Now, you can scroll down to the APIs below and diving into details.
+It is very simple, right? <br />
+Now, you can scroll down the APIs below and diving into details.
 
 <br />
 
