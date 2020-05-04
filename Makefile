@@ -1,3 +1,7 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Standard
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .PHONY: fmt
 fmt:
 	@printf "\n"
@@ -39,6 +43,11 @@ test:
 test-ci:
 	npx jest --ci --bail
 
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Git
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .PHONY: git-add
 git-add: fmt lint
 	@printf "\n"
@@ -46,12 +55,17 @@ git-add: fmt lint
 	@printf "\n"
 
 .PHONY: git-pre-merge
-git-pre-merge: test run-examples git-add
+git-pre-merge: test output-examples git-add
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Utils
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .PHONY: clean-install
 clean-install:
 	scripts/clean-install.sh
 
-.PHONY: run-examples
-run-examples:
-	scripts/run-examples.sh
+.PHONY: output-examples
+output-examples:
+	scripts/output-examples.sh
