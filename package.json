@@ -14,6 +14,7 @@
     "dom"
   ],
   "dependencies": {
+    "lodash.get": "4.4.2",
     "parse5": "6.0.0",
     "xmldom": "0.3.0",
     "xmlserializer": "0.6.1",
