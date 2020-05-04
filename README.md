@@ -10,8 +10,8 @@
 **XPath** stands for **XML Path Language**.
 It provides a flexible **non-XML syntax** to address (point to) different parts of an XML document.
 
-With the **XPath HTML**,
-it enabled us to use this powerful tool navigating through the **HTML DOM** by **XPath Expression**.
+> With the **XPath HTML**,
+> it enabled us to use this powerful tool navigating through the **HTML DOM** by **XPath Expression**.
 
 If you want to learn more about the **XPath** and
 know how to use different **XPath Expression** for finding the complex or dynamic elements.
