@@ -10,5 +10,5 @@ const html = fs.readFileSync(`${__dirname}/shopback.html`, 'utf8');
 // As long as the argument is a string type, everything should be fine.
 const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
 
-console.log(`The matching tag is "${node.getTagName()}"`);
+console.log(`The matched tag name is "${node.getTagName()}"`);
 console.log(`Your full text is "${node.getText()}"`);

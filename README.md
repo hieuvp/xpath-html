@@ -8,18 +8,18 @@
 <br />
 
 **XPath** stands for **XML Path Language**.<br />
-It provides a flexible **non-XML syntax** to address (point to) different parts of an XML document.
+It provides a flexible **non-XML syntax** to address (point to) different parts of an **XML document**.
 
 <br />
 
 > With the [**XPath HTML**](#xpath-html),
 > this will enable us to use such a powerful tool,
-> navigating through the **HTML DOM** by **XPath Expression**.
+> navigating through the **HTML DOM** by **XPath expression**.
 
 <br />
 
 If you want to learn more about the **XPath** and
-know how to use different **XPath Expression** for finding complex or dynamic elements,
+know how to use different **XPath expression** for finding complex or dynamic elements,
 take a visit to this concise tutorial
 [here](https://github.com/hieuvp/learning-automation-tools/blob/master/xpath/README.md).
 
@@ -73,7 +73,7 @@ const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 // As long as the argument is a string type, everything should be fine.
 const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
 
-console.log(`The matching tag is "${node.getTagName()}"`);
+console.log(`The matched tag name is "${node.getTagName()}"`);
 console.log(`Your full text is "${node.getText()}"`);
 ```
 
@@ -93,7 +93,7 @@ Bang 💥 **Output** should be something looks like:
 <!-- The below code snippet is automatically added from output/hello.txt -->
 
 ```txt
-The matching tag is "div"
+The matched tag name is "div"
 Your full text is "Made with love by"
 ```
 
