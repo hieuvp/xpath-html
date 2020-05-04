@@ -13,7 +13,8 @@ It provides a flexible **non-XML syntax** to address (point to) different parts 
 <br />
 
 > With the [**XPath HTML**](#xpath-html),
-> this will enable us to use such a powerful tool, navigating through the **HTML DOM** by **XPath Expression**.
+> this will enable us to use such a powerful tool,
+> navigating through the **HTML DOM** by **XPath Expression**.
 
 <br />
 
