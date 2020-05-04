@@ -13,10 +13,10 @@ const DEFAULT_NAMESPACE = 'x';
  */
 class XPath {
   /**
-   * @param {string} xml
+   * @param {string} xhtml
    */
-  constructor(xml) {
-    const document = new DOMParser().parseFromString(xml);
+  constructor(xhtml) {
+    const document = new DOMParser().parseFromString(xhtml);
     const select = xpath.useNamespaces({ [DEFAULT_NAMESPACE]: 'http://www.w3.org/1999/xhtml' });
 
     this.document = document;

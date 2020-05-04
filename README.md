@@ -32,8 +32,8 @@ Checkout this concise tutorial
   - [Hello XPath from HTML](#hello-xpath-from-html)
   - [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
   - [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression)
-  - [`fromNode(xml).findElement(expression)`](#fromnodexmlfindelementexpression)
-  - [`fromNode(xml).findElements(expression)`](#fromnodexmlfindelementsexpression)
+  - [`fromNode(xhtml).findElement(expression)`](#fromnodexhtmlfindelementexpression)
+  - [`fromNode(xhtml).findElements(expression)`](#fromnodexhtmlfindelementsexpression)
   - [`node.getTagName()`](#nodegettagname)
   - [`node.getText()`](#nodegettext)
 - [Dependencies](#dependencies)
@@ -202,7 +202,7 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 <br />
 
-### `fromNode(xml).findElement(expression)`
+### `fromNode(xhtml).findElement(expression)`
 
 > Making XPath query against an XML node.
 
@@ -210,7 +210,7 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 | Name         | Type               | Description                                                                                                                            |
 | ------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `xml`        | `Node` or `string` | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| `xhtml`      | `Node` or `string` | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
 | `expression` | `string`           | The given XPath expression                                                                                                             |
 
 **Returns:** `Node`
@@ -252,7 +252,7 @@ console.log(node.toString());
 
 <br />
 
-### `fromNode(xml).findElements(expression)`
+### `fromNode(xhtml).findElements(expression)`
 
 > Search for multiple elements on the page.
 > Refer to the documentation on #findElement(by)
@@ -262,7 +262,7 @@ console.log(node.toString());
 
 | Name         | Type               | Description                                                                                                                            |
 | ------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `xml`        | `Node` or `string` | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
+| `xhtml`      | `Node` or `string` | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
 | `expression` | `string`           | The given XPath expression                                                                                                             |
 
 **Returns:** `Array<Node>`
