@@ -215,6 +215,11 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 **Returns:** `Node`
 
+**Notes:**
+
+- `xmlns="http://www.w3.org/1999/xhtml"`
+- e.g. `<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>`
+
 **Example**:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/fromNode.findElement.js) -->
@@ -261,6 +266,11 @@ console.log(node.toString());
 | `expression` | `string`           | The given XPath expression                                                                                                             |
 
 **Returns:** `Array<Node>`
+
+**Notes:**
+
+- `xmlns="http://www.w3.org/1999/xhtml"`
+- e.g. `<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>`
 
 **Example**:
 
