@@ -179,10 +179,10 @@ const nodes = xpath
   .fromPageSource(html)
   .findElements("//img[starts-with(@src, 'https://cloud.shopback.com')]");
 
-console.log("Number of returned nodes:", nodes.length);
+console.log("Number of nodes found:", nodes.length);
 
-console.log(nodes[0].toString());
-console.log(nodes[1].toString());
+console.log("nodes[0]:", nodes[0].toString());
+console.log("nodes[1]:", nodes[1].toString());
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -193,9 +193,9 @@ console.log(nodes[1].toString());
 <!-- The below code snippet is automatically added from output/fromPageSource.findElements.txt -->
 
 ```txt
-Number of returned nodes: 158
-<img src="https://cloud.shopback.com/raw/upload/static/images/navbar/sb-logo.png" xmlns="http://www.w3.org/1999/xhtml"/>
-<img src="https://cloud.shopback.com/raw/upload/static/images/navbar/desktop/icon-raf.svg" xmlns="http://www.w3.org/1999/xhtml"/>
+Number of nodes found: 158
+nodes[0]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/sb-logo.png" xmlns="http://www.w3.org/1999/xhtml"/>
+nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/desktop/icon-raf.svg" xmlns="http://www.w3.org/1999/xhtml"/>
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -228,6 +228,7 @@ const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-group']");
 
 const node = xpath.fromNode(group).findElement("//a[@href='/aliexpress']");
+
 console.log(node.toString());
 ```
 
@@ -247,6 +248,10 @@ console.log(node.toString());
 <br />
 
 ### `fromNode(xml).findElements(expression)`
+
+> Search for multiple elements on the page.
+> Refer to the documentation on #findElement(by)
+> for information on element locator strategies.
 
 **Arguments:**
 
@@ -272,10 +277,10 @@ const group = xpath.fromPageSource(html).findElement("//div[@class='ui-store-gro
 
 const nodes = xpath.fromNode(group).findElements("//img[contains(@src,'shopily')]");
 
-console.log("Number of returned nodes:", nodes.length);
+console.log("Number of nodes found:", nodes.length);
 
-console.log(nodes[0].toString());
-console.log(nodes[1].toString());
+console.log("nodes[0]:", nodes[0].toString());
+console.log("nodes[1]:", nodes[1].toString());
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -286,9 +291,9 @@ console.log(nodes[1].toString());
 <!-- The below code snippet is automatically added from output/fromNode.findElements.txt -->
 
 ```txt
-Number of returned nodes: 2
-<img class="store-logo" src="https://shopily-sg.s3.amazonaws.com/uploads/stores/504/504_logo_200c4121.png" alt="zChocolat Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
-<img class="store-logo" src="https://shopily-sg.s3.amazonaws.com/uploads/stores/2498/2498_logo_81f0a24d.png" alt="Bed Bath &amp; Beyond Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
+Number of nodes found: 2
+nodes[0]: <img class="store-logo" src="https://shopily-sg.s3.amazonaws.com/uploads/stores/504/504_logo_200c4121.png" alt="zChocolat Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
+nodes[1]: <img class="store-logo" src="https://shopily-sg.s3.amazonaws.com/uploads/stores/2498/2498_logo_81f0a24d.png" alt="Bed Bath &amp; Beyond Coupons &amp; Promo Codes" xmlns="http://www.w3.org/1999/xhtml"/>
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -315,14 +320,14 @@ const xpath = require("xpath-html");
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
-console.log(node.getTagName());
+console.log("node's tag name:", node.getTagName());
 
 const nodes = xpath
   .fromPageSource(html)
   .findElements("//img[starts-with(@src, 'https://cloud.shopback.com')]");
 
-console.log(nodes[0].getTagName());
-console.log(nodes[1].getTagName());
+console.log("nodes[0]'s tag name:", nodes[0].getTagName());
+console.log("nodes[1]'s tag name:", nodes[1].getTagName());
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -333,9 +338,9 @@ console.log(nodes[1].getTagName());
 <!-- The below code snippet is automatically added from output/node.getTagName.txt -->
 
 ```txt
-div
-img
-img
+node's tag name: div
+nodes[0]'s tag name: img
+nodes[1]'s tag name: img
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -362,14 +367,14 @@ const xpath = require("xpath-html");
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
-console.log(node.getText());
+console.log("text of node:", node.getText());
 
 const nodes = xpath
   .fromPageSource(html)
   .findElements("//div[@id='home-page-container']//*[@class='title-text']");
 
-console.log(nodes[0].getText());
-console.log(nodes[1].getText());
+console.log("text of nodes[0]:", nodes[0].getText());
+console.log("text of nodes[1]:", nodes[1].getText());
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -380,9 +385,9 @@ console.log(nodes[1].getText());
 <!-- The below code snippet is automatically added from output/node.getText.txt -->
 
 ```txt
-Made with love by
-Up to 10.0% Cash Rewards
-Up to 7.0% Cashback
+text of node: Made with love by
+text of nodes[0]: Up to 10.0% Cash Rewards
+text of nodes[1]: Up to 7.0% Cashback
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
