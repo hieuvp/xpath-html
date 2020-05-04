@@ -100,9 +100,8 @@ Your full text is "Made with love by"
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-Its very simple
-This is a great example that help you to get started,
-if you want to dive more into details please looking at the APIs below.
+It is very simple, right?
+Now, you can scroll down to the APIs below and diving into details.
 
 <br />
 
