@@ -79,9 +79,11 @@ console.log(`Your full text is "${node.getText()}"`);
 ```shell script
 # The quickest way to download the file above
 $ curl https://www.shopback.sg -o shopback.html
+
+# Or from GitHub
 ```
 
-Boom 💥 your result should be:
+Bang 💥 the output should be something looks like:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/hello.txt) -->
 <!-- The below code snippet is automatically added from output/hello.txt -->
