@@ -62,12 +62,12 @@ const fs = require("fs");
 const xpath = require("xpath-html");
 
 // Assuming you have an html file locally,
-// here is the content I scraped from www.shopback.sg
+// Here is the content that I scraped from www.shopback.sg
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 
 // Don't worry about the input much,
 // you could be able to use an HTML response of an HTTP request
-// As long as the args is a string type, everything should be fine.
+// As long as the argument is a string type, everything should be fine.
 const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
 
 console.log(`The matching tag is "${node.getTagName()}"`);
@@ -376,7 +376,7 @@ const xpath = require("xpath-html");
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
-console.log("Text of a single node:", node.getText());
+console.log("Text of the node:", node.getText());
 
 const nodes = xpath
   .fromPageSource(html)
@@ -394,7 +394,7 @@ console.log("Text of nodes[1]:", nodes[1].getText());
 <!-- The below code snippet is automatically added from output/node.getText.txt -->
 
 ```txt
-Text of a single node: Made with love by
+Text of the node: Made with love by
 Text of nodes[0]: Up to 10.0% Cash Rewards
 Text of nodes[1]: Up to 7.0% Cashback
 ```

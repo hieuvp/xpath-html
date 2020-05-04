@@ -4,7 +4,7 @@ const xpath = require('xpath-html');
 const html = fs.readFileSync(`${__dirname}/shopback.html`, 'utf8');
 const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
 
-console.log('Text of a single node:', node.getText());
+console.log('Text of the node:', node.getText());
 
 const nodes = xpath
   .fromPageSource(html)
