@@ -108,8 +108,7 @@ Now, you can scroll down the APIs below and diving into details.
 
 ### `fromPageSource(html).findElement(expression)`
 
-> Making XPath query against an HTML document.
-> Locates an element on the page.
+> Locate an element on the page.
 > The returned source is a representation of the underlying DOM:
 > do not expect it to be formatted
 > or escaped in the same way as the raw response sent from the web server.
@@ -157,6 +156,7 @@ console.log(node.toString());
 
 > Search for multiple elements on the page.
 > Refer to the documentation on #findElement(by)
+> [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
 > for information on element locator strategies.
 
 **Arguments:**
@@ -207,7 +207,7 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 ### `fromNode(xhtml).findElement(expression)`
 
-> Making XPath query against an XML node.
+> Making XPath query against an XHTML node.
 
 **Arguments:**
 
