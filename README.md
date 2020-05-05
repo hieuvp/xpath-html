@@ -200,22 +200,21 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 ### `fromNode(xhtml).findElement(expression)`
 
 > Make a query to select an element against XHTML format.
-> Refer to the documentation on #findElement(by)
-> [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
-> for information on element locator strategies.
+> Similar to [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
+> but this time it is for a subset of an `html` page.
 
 **Arguments:**
 
-| Name         | Type               | Description                                                                                                                            |
-| ------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `xhtml`      | `Node` or `string` | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| `expression` | `string`           | The given XPath expression                                                                                                             |
+| Name         | Type               | Description                                                                                               |
+| ------------ | ------------------ | --------------------------------------------------------------------------------------------------------- |
+| `xhtml`      | `Node` or `string` | Either a **returned node** with the selected element(s)<br />or an **xhtml string** with a correct format |
+| `expression` | `string`           | The given XPath expression                                                                                |
 
 **Returns:** `Node`
 
 **Notes:**
 
-- The input `xhtml` must have a namespace of `xmlns="http://www.w3.org/1999/xhtml"`
+- The input `xhtml` must have a namespace of `xmlns="http://www.w3.org/1999/xhtml"`<br />
   e.g. `<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>`
 
 **Example**:
