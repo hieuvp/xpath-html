@@ -199,7 +199,7 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 ### `fromNode(xhtml).findElement(expression)`
 
-> Making XPath query against an XHTML node.
+> Make a query to find an element against an XHTML.
 
 **Arguments:**
 
@@ -212,8 +212,8 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 **Notes:**
 
-- `xmlns="http://www.w3.org/1999/xhtml"`
-- e.g. `<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>`
+- The input `xhtml` must have a namespace of `xmlns="http://www.w3.org/1999/xhtml"`
+  e.g. `<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>`
 
 **Example**:
 
