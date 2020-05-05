@@ -106,10 +106,8 @@ Now, you can scroll down the APIs below and diving into details.
 
 ### `fromPageSource(html).findElement(expression)`
 
-> Locate an element on the page.
-> The returned source is a representation of the underlying DOM:
-> do not expect it to be formatted
-> or escaped in the same way as the raw response sent from the web server.
+> Locate an element on a page,
+> the returned node is a representation of the underlying DOM.
 
 **Arguments:**
 
