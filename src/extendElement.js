@@ -11,11 +11,15 @@ const getTagName = (node) => get(node, ['tagName']);
  * @returns {string}
  */
 const getText = (node) => {
-  const nodeName = get(node, ['firstChild', 'nodeName']);
-  const nodeValue = get(node, ['firstChild', 'nodeValue']);
+  const { length } = node.childNodes;
 
-  if (nodeName === '#text' && typeof nodeValue === 'string') {
-    return nodeValue;
+  for (let index = 0; index < length; index += 1) {
+    const nodeName = get(node, ['childNodes', index, 'nodeName']);
+    const nodeValue = get(node, ['childNodes', index, 'nodeValue']);
+
+    if (nodeName === '#text' && typeof nodeValue === 'string') {
+      return nodeValue;
+    }
   }
 
   return undefined;
