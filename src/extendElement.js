@@ -11,7 +11,7 @@ const getTagName = (node) => get(node, ['tagName']);
  * @returns {string}
  */
 const getText = (node) => {
-  const { length } = node.childNodes;
+  const length = get(node, ['childNodes', 'length']);
 
   for (let index = 0; index < length; index += 1) {
     const nodeName = get(node, ['childNodes', index, 'nodeName']);
