@@ -199,22 +199,22 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 ### `fromNode(xhtml).findElement(expression)`
 
-> Make a query to select an element against XHTML format.
+> Make a query to select an element against XHTML format.<br />
 > Similar to [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
 > but this time it is for a subset of an `html` page.
 
 **Arguments:**
 
-| Name         | Type               | Description                                                                                               |
-| ------------ | ------------------ | --------------------------------------------------------------------------------------------------------- |
-| `xhtml`      | `Node` or `string` | Either a **returned node** with the selected element(s)<br />or an **xhtml string** with a correct format |
-| `expression` | `string`           | The given XPath expression                                                                                |
+| Name         | Type               | Description                                                                                   |
+| ------------ | ------------------ | --------------------------------------------------------------------------------------------- |
+| `xhtml`      | `Node` or `string` | Either a **returned node** from the query<br />or an **xhtml string** with the correct format |
+| `expression` | `string`           | The given XPath expression                                                                    |
 
 **Returns:** `Node`
 
 **Notes:**
 
-- The input `xhtml` must have a namespace of `xmlns="http://www.w3.org/1999/xhtml"`<br />
+- The input `xhtml` must have a namespace of `xmlns="http://www.w3.org/1999/xhtml"` <br />
   e.g. `<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>`
 
 **Example**:
