@@ -6,8 +6,8 @@ const xpath = require('xpath-html');
 const html = fs.readFileSync(`${__dirname}/shopback.html`, 'utf8');
 
 // Don't worry about the input much,
-// you could be able to use an HTML response of an HTTP request
-// As long as the argument is a string type, everything should be fine.
+// you are be able to use an HTML response of an HTTP request,
+// as long as the argument is a string type, everything should be fine.
 const node = xpath.fromPageSource(html).findElement("//*[contains(text(), 'with love')]");
 
 console.log(`The matched tag name is "${node.getTagName()}"`);
