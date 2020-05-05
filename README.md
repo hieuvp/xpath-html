@@ -398,6 +398,8 @@ Text of nodes[1]: Up to 7.0% Cashback
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+<br />
+
 ### `node.getAttribute(name)`
 
 > Retrieve the current value of the given attribute of this node.
