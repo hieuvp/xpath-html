@@ -420,9 +420,9 @@ const fs = require("fs");
 const xpath = require("xpath-html");
 
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
-const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
+const node = xpath.fromPageSource(html).findElement("//a[@href='/aliexpress']");
 
-console.log("Single node's tag name:", node.getAttribute("href"));
+console.log("href attribute:", node.getAttribute("href"));
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -430,13 +430,13 @@ console.log("Single node's tag name:", node.getAttribute("href"));
 **Result**:
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/node.getAttribute.txt) -->
-<!-- The below code snippet is automatically added from output/node.getText.txt -->
+<!-- The below code snippet is automatically added from output/node.getAttribute.txt -->
 
 ```txt
-Text of the node: Made with love by
-Text of nodes[0]: Up to 10.0% Cash Rewards
-Text of nodes[1]: Up to 7.0% Cashback
+href attribute: /aliexpress
 ```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Dependencies
 
