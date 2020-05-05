@@ -37,6 +37,7 @@ take a visit to this concise tutorial
   - [`fromNode(xhtml).findElements(expression)`](#fromnodexhtmlfindelementsexpression)
   - [`node.getTagName()`](#nodegettagname)
   - [`node.getText()`](#nodegettext)
+  - [`node.getAttribute(name)`](#nodegetattributename)
 - [Dependencies](#dependencies)
 - [License](#license)
 
@@ -396,6 +397,46 @@ Text of nodes[1]: Up to 7.0% Cashback
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+### `node.getAttribute(name)`
+
+> Retrieve the current value of the given attribute of this node.
+
+**Arguments:**
+
+| Name   | Type     | Description                        |
+| ------ | -------- | ---------------------------------- |
+| `name` | `string` | The name of the attribute to query |
+
+**Returns:** `string`
+
+**Example**:
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/node.getAttribute.js) -->
+<!-- The below code snippet is automatically added from examples/node.getAttribute.js -->
+
+```js
+const fs = require("fs");
+const xpath = require("xpath-html");
+
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
+const node = xpath.fromPageSource(html).findElement("//*[text()='Made with love by']");
+
+console.log("Single node's tag name:", node.getAttribute("href"));
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+**Result**:
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/node.getAttribute.txt) -->
+<!-- The below code snippet is automatically added from output/node.getText.txt -->
+
+```txt
+Text of the node: Made with love by
+Text of nodes[0]: Up to 10.0% Cash Rewards
+Text of nodes[1]: Up to 7.0% Cashback
+```
 
 ## Dependencies
 
