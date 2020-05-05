@@ -37,6 +37,7 @@ take a visit to this concise tutorial
   - [`fromNode(xhtml).findElements(expression)`](#fromnodexhtmlfindelementsexpression)
   - [`node.getTagName()`](#nodegettagname)
   - [`node.getText()`](#nodegettext)
+  - [`node.getAttribute(name)`](#nodegetattributename)
 - [Dependencies](#dependencies)
 - [License](#license)
 
@@ -393,6 +394,48 @@ console.log("Text of nodes[1]:", nodes[1].getText());
 Text of the node: Made with love by
 Text of nodes[0]: Up to 10.0% Cash Rewards
 Text of nodes[1]: Up to 7.0% Cashback
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<br />
+
+### `node.getAttribute(name)`
+
+> Retrieve the current value of the given attribute of this node.
+
+**Arguments:**
+
+| Name   | Type     | Description                        |
+| ------ | -------- | ---------------------------------- |
+| `name` | `string` | The name of the attribute to query |
+
+**Returns:** `string`
+
+**Example**:
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=examples/node.getAttribute.js) -->
+<!-- The below code snippet is automatically added from examples/node.getAttribute.js -->
+
+```js
+const fs = require("fs");
+const xpath = require("xpath-html");
+
+const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
+const node = xpath.fromPageSource(html).findElement("//a[text()='View All Popular Stores']");
+
+console.log("The href value is:", node.getAttribute("href"));
+```
+
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+**Result**:
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=output/node.getAttribute.txt) -->
+<!-- The below code snippet is automatically added from output/node.getAttribute.txt -->
+
+```txt
+The href value is: /all-stores
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
