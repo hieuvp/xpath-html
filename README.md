@@ -251,23 +251,23 @@ console.log(node.toString());
 
 ### `fromNode(xhtml).findElements(expression)`
 
-> Search for multiple elements on the page.
-> Refer to the documentation on #findElement(by)
-> for information on element locator strategies.
+> Select multiple elements against an XHTML format.<br />
+> Same as [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression),
+> however it is useful for querying a part of a bigger `html` page.
 
 **Arguments:**
 
-| Name         | Type               | Description                                                                                                                            |
-| ------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `xhtml`      | `Node` or `string` | Parsing context element. If specified, given fragment will be parsed as if it was set to the context element's \`innerHTML\` property. |
-| `expression` | `string`           | The given XPath expression                                                                                                             |
+| Name         | Type               | Description                                                                           |
+| ------------ | ------------------ | ------------------------------------------------------------------------------------- |
+| `xhtml`      | `Node` or `string` | Either a **returned node** from a query<br />or an **xhtml string** with a good shape |
+| `expression` | `string`           | The given XPath expression                                                            |
 
 **Returns:** `Array<Node>`
 
 **Notes:**
 
-- `xmlns="http://www.w3.org/1999/xhtml"`
-- e.g. `<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>`
+- The input `xhtml` must have a namespace of `xmlns="http://www.w3.org/1999/xhtml"` <br />
+  e.g. `<div xmlns="http://www.w3.org/1999/xhtml">Made with love by</div>`
 
 **Example**:
 
