@@ -200,7 +200,7 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 ### `fromNode(xhtml).findElement(expression)`
 
 > Select an element against an XHTML format.<br />
-> Similar to [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
+> Similar to [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression),
 > but it is for a subset of an `html` page this time.
 
 **Arguments:**
