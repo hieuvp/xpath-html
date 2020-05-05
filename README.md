@@ -354,7 +354,7 @@ Second nodes[1] tag name: img
 
 ### `node.getText()`
 
-> Get the visible **innerText** of this node.
+> Get the visible **innerText** of the node.
 
 **Arguments:** None
 
