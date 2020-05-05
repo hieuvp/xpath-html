@@ -18,7 +18,7 @@ It provides a flexible **non-XML syntax** to address (point to) different parts 
 
 <br />
 
-If you want to learn more about the **XPath** and
+If you want to learn more about **XPath** and
 know how to use different **XPath expression** for finding complex or dynamic elements,
 take a visit to this concise tutorial
 [here](https://github.com/hieuvp/learning-automation-tools/blob/master/xpath/README.md).
