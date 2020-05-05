@@ -199,16 +199,16 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 ### `fromNode(xhtml).findElement(expression)`
 
-> Make a query to select an element against XHTML format.<br />
+> Select an element against an XHTML format.<br />
 > Similar to [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
-> but this time it is for a subset of an `html` page.
+> but it is for a subset of an `html` page this time.
 
 **Arguments:**
 
-| Name         | Type               | Description                                                                                   |
-| ------------ | ------------------ | --------------------------------------------------------------------------------------------- |
-| `xhtml`      | `Node` or `string` | Either a **returned node** from the query<br />or an **xhtml string** with the correct format |
-| `expression` | `string`           | The given XPath expression                                                                    |
+| Name         | Type               | Description                                                                           |
+| ------------ | ------------------ | ------------------------------------------------------------------------------------- |
+| `xhtml`      | `Node` or `string` | Either a **returned node** from a query<br />or an **xhtml string** with a good shape |
+| `expression` | `string`           | The given XPath expression                                                            |
 
 **Returns:** `Node`
 
