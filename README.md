@@ -81,7 +81,7 @@ console.log(`Your full text is "${node.getText()}"`);
 # A fast way to download .html file above
 $ curl https://www.shopback.sg -o shopback.html
 
-# Or try from my GitHub examples
+# Or from my GitHub examples
 $ curl -O https://raw.githubusercontent.com/hieuvp/xpath-html/master/examples/shopback.html
 ```
 
