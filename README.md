@@ -150,10 +150,7 @@ console.log(node.toString());
 
 ### `fromPageSource(html).findElements(expression)`
 
-> Search for multiple elements on the page.
-> Refer to the documentation on #findElement(by)
-> [`fromPageSource(html).findElement(expression)`](#frompagesourcehtmlfindelementexpression)
-> for information on element locator strategies.
+> Search for multiple elements on a page.
 
 **Arguments:**
 
