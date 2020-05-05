@@ -199,7 +199,7 @@ nodes[1]: <img src="https://cloud.shopback.com/raw/upload/static/images/navbar/d
 
 ### `fromNode(xhtml).findElement(expression)`
 
-> Make a query to find an element against an XHTML.
+> Make a query to select an element against XHTML format.
 
 **Arguments:**
 
