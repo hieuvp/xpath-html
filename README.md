@@ -253,7 +253,7 @@ console.log(node.toString());
 
 > Select multiple elements against an XHTML format.<br />
 > Same as [`fromPageSource(html).findElements(expression)`](#frompagesourcehtmlfindelementsexpression),
-> however it is useful for querying a part of a bigger `html` page.
+> however it is being used for querying from a part of an `html`.
 
 **Arguments:**
 
