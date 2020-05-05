@@ -411,4 +411,4 @@ which are the foundation of what `xpath-html` was built upon.
 
 MIT
 
-Made with ❤ from [ShopBack](https://www.shopback.com/)
+Made with ❤ from [ShopBack](https://www.shopback.com/).
