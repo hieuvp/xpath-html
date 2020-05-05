@@ -1,4 +1,4 @@
-const parser = require('parse5');
+const { parse } = require('parse5');
 const { serializeToString } = require('xmlserializer');
 
 const XPath = require('./XPath');
@@ -14,7 +14,7 @@ const fromNode = (xhtml) => new XPath(xhtml.toString());
  * @returns {XPath}
  */
 const fromPageSource = (html) => {
-  const dom = parser.parse(html);
+  const dom = parse(html);
   const xhtml = serializeToString(dom);
 
   return fromNode(xhtml);
