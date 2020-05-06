@@ -19,10 +19,9 @@ describe('getText', () => {
     },
   ];
 
-  it('should return correctly', () => {
+  it('should return correctly', () =>
     cases.forEach(({ node, output }) => {
       const text = xpath.fromNode(node).findElement('//h6').getText();
       expect(text).toEqual(output);
-    });
-  });
+    }));
 });
