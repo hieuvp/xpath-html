@@ -9,6 +9,10 @@ describe('composeExpressionWithNamespace', () => {
       output: "//x:div[@class='course-title']",
     },
     {
+      expression: "//a[@href='/aliexpress']",
+      output: "//x:a[@href='/aliexpress']",
+    },
+    {
       expression: "//div[@class='course-title']/h1",
       output: "//x:div[@class='course-title']/x:h1",
     },
