@@ -13,6 +13,10 @@ describe('composeExpressionWithNamespace', () => {
       output: "//x:a[@href='/aliexpress']",
     },
     {
+      expression: "//img[starts-with(@src, 'https://cloud.shopback.com')]",
+      output: "//x:img[starts-with(@src, 'https://cloud.shopback.com')]",
+    },
+    {
       expression: "//div[@class='course-title']/h1",
       output: "//x:div[@class='course-title']/x:h1",
     },
