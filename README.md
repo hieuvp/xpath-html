@@ -424,7 +424,7 @@ const xpath = require("xpath-html");
 const html = fs.readFileSync(`${__dirname}/shopback.html`, "utf8");
 const node = xpath.fromPageSource(html).findElement("//a[text()='View All Popular Stores']");
 
-console.log("The href value is:", node.getAttribute("href"));
+console.log("The href value:", node.getAttribute("href"));
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
@@ -435,7 +435,7 @@ console.log("The href value is:", node.getAttribute("href"));
 <!-- The below code snippet is automatically added from output/node.getAttribute.txt -->
 
 ```txt
-The href value is: /all-stores
+The href value: /all-stores
 ```
 
 <!-- AUTO-GENERATED-CONTENT:END -->
