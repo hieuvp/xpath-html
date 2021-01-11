@@ -32,6 +32,7 @@ class XPath {
     const enhancedExpression = composeExpressionWithNamespace(expression, DEFAULT_NAMESPACE);
 
     const node = this.select(enhancedExpression, this.document, single);
+    if(!node) return node
     extendElement(node);
 
     return node;
